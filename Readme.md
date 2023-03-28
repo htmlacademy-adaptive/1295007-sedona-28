@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Александра Дмитриева](https://up.htmlacademy.ru/adaptive/28/user/1295007).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
