@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -17,25 +18,25 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a>Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Фото и видео</a>
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-container">
-      <section class="main-hero hero">
+      <section class="main-hero main-hero--index">
         <h1 class="visually-hidden">Седона</h1>
-        <img class="hero__image" src="#" width="282" height="146"
+        <img class="main-hero__image" src="#" width="282" height="146"
           alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" lang="en">
       </section>
       <section class="advantages">
@@ -46,7 +47,7 @@
             <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </header>
           <ol class="advantages__list">
-            <li class="advantages__item item item--inside-blue">
+            <li class="advantages__item item advantages__item--inside-blue">
               <div class="item__wrapper-text">
                 <h3 class="item__title">Настоящий городок</h3>
                 <span class="item__number">— №1 —</span>
@@ -58,24 +59,26 @@
                 <img class="item__image" src="#" alt="Мероприятия в Седоне.">
               </div>
               <div class="services">
-                <h2 class="visually-hidden">Сервисы</h2>
-                <ul class="services__list">
-                  <li class="services__item item item--home">
-                    <h3 class="item__title">Жильё</h3>
-                    <p class="item__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                  </li>
-                  <li class="services__item item item--food">
-                    <h3 class="item__title">Еда</h3>
-                    <p class="item__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                  </li>
-                  <li class="services__item item item--souvenirs">
-                    <h3 class="item__title">Сувениры</h3>
-                    <p class="item__description">Не только китайского, но и местного производства!</p>
-                  </li>
-                </ul>
+                <div class="services__wrapper">
+                  <h2 class="visually-hidden">Сервисы</h2>
+                  <ul class="services__list">
+                    <li class="services__item services__item--home">
+                      <h3 class="services__title">Жильё</h3>
+                      <p class="services__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                    </li>
+                    <li class="services__item services__item--food">
+                      <h3 class="services__title">Еда</h3>
+                      <p class="services__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    </li>
+                    <li class="services__item services__item--souvenirs">
+                      <h3 class="services__title">Сувениры</h3>
+                      <p class="services__description">Не только китайского, но и местного производства!</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
-            <li class="advantages__item item item--inside-blue">
+            <li class="advantages__item item advantages__item--inside-blue">
               <div class="item__wrapper-text">
                 <h3 class="item__title">Там есть мост дьявола</h3>
                 <span class="item__number">— №2 —</span>
@@ -87,8 +90,8 @@
                 <img class="item__image" src="#" alt="Мост дьявола.">
               </div>
             </li>
-            <li class="advantages__item item">
-              <div class="item__wrapper-text">
+            <li class="advantages__item item advantages__item--inside-gray">
+              <div class="item__wrapper-text item__wrapper-text--inside-gray">
                 <h3 class="item__title">Небольшая площадь</h3>
                 <span class="item__number">— №3 —</span>
                 <p class="item__description">
@@ -96,8 +99,8 @@
                 </p>
               </div>
             </li>
-            <li class="advantages__item item">
-              <div class="item__wrapper-text">
+            <li class="advantages__item item advantages__item--inside-gray">
+              <div class="item__wrapper-text item__wrapper-text--inside-gray">
                 <h3 class="item__title">Красивая дорога</h3>
                 <span class="item__number">— №4 —</span>
                 <p class="item__description">
@@ -105,8 +108,8 @@
                 </p>
               </div>
             </li>
-            <li class="advantages__item item">
-              <div class="item__wrapper-text">
+            <li class="advantages__item item advantages__item--inside-gray">
+              <div class="item__wrapper-text item__wrapper-text--inside-gray">
                 <h3 class="item__title">Мало туристов</h3>
                 <span class="item__number">— №5 —</span>
                 <p class="item__description">
@@ -133,8 +136,8 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__contacts contacts">
-          <b class="contacts__text">#VISITSEDONA</b>
+        <div class="main-footer__contacts">
+          <b>#VISITSEDONA</b>
         </div>
         <ul class="main-footer__social social">
           <li class="social__item">
@@ -154,7 +157,7 @@
           </li>
         </ul>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__title">Разработано</b>
+          <span class="copyright__title">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>

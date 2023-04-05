@@ -1,0 +1,19 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin button {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 18px 16px;
+  border: none;
+  cursor: pointer;
+}

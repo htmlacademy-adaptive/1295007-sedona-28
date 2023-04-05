@@ -1,0 +1,28 @@
+@use "global/bootstrap";
+
+.search-hotel {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.search-hotel__wrapper {
+  padding: 39px 0;
+}
+
+.search-hotel__title {
+  margin: 0;
+  margin-bottom: 29px;
+  line-height: 26px;
+}
+
+.search-hotel__description {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.search-hotel__find-hotel {
+  width: 284px;
+  font-size: 21px;
+
+  @include bootstrap.button;
+}

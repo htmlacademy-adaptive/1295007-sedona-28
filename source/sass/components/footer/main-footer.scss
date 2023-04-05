@@ -1,0 +1,25 @@
+@use "global/bootstrap";
+
+.main-footer {
+  text-align: center;
+}
+
+.main-footer__wrapper {
+  margin-top: 8px;
+  padding: 33px 0;
+}
+
+.main-footer__contacts {
+  font-size: 21px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.main-footer__social {
+  @include bootstrap.reset-list;
+  margin-bottom: 30px;
+}
+
+.main-footer__copyright {
+  text-transform: uppercase;
+}

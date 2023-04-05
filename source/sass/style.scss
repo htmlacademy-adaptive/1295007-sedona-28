@@ -1,1 +1,17 @@
-// Начните писать стили здесь
+// Файл с часто используемыми элементами
+@use "global/bootstrap";
+// Базовые блоки
+@use "components/visually-hidden";
+// Блоки
+@use "components/page";
+@use "components/container";
+@use "components/header/main-header";
+@use "components/header/main-nav";
+@use "components/main-index/main-container";
+@use "components/main-index/main-hero";
+@use "components/main-index/advantages";
+@use "components/main-index/item";
+@use "components/main-index/services";
+@use "components/main-index/search-hotel";
+@use "components/footer/main-footer";
+@use "components/footer/social";
