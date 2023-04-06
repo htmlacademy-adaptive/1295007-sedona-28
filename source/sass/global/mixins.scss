@@ -17,3 +17,15 @@
   border: none;
   cursor: pointer;
 }
+
+@mixin title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin subtitle {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+}

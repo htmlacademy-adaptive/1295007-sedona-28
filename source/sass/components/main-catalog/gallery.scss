@@ -1,0 +1,30 @@
+@use "global/bootstrap";
+
+.gallery__wrapper {
+  margin: 25px 20px;
+}
+
+.gallery__header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 17px;
+}
+
+.gallery__title {
+  @include bootstrap.title;
+  margin-bottom: 35px;
+}
+
+.gallery__intro {
+  margin: 0;
+}
+
+.gallery__list {
+  @include bootstrap.reset-list;
+}
+
+.gallery__item {
+  width: 280px;
+  min-height: 375px;
+}

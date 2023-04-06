@@ -1,8 +1,8 @@
 @use "global/bootstrap";
 
 .services {
-  background: #ffffff;
-  color: #333333;
+  background-color: bootstrap.$main-bgColor;
+  color: bootstrap.$black-color;
 }
 
 .services__wrapper {
@@ -28,8 +28,8 @@
 .services__title {
   margin: 0;
   margin-top: 8px;
-  font-size: 18px;
-  line-height: 26px;
+
+  @include bootstrap.title;
   margin-bottom: 16px;
 }
 

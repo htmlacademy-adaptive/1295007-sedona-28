@@ -1,10 +1,12 @@
+@use "global/bootstrap";
+
 .main-header {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
+
+  @include bootstrap.title;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: bootstrap.$white-color;
 }
 
 .main-header__logo {

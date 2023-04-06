@@ -2,21 +2,16 @@
 
 .advantages__wrapper {
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 28px;
 }
 
 .advantages__header {
-  margin: 0 auto;
-  margin-bottom: 32px;
+  margin: 32px 0;
   text-align: center;
   text-transform: uppercase;
 }
 
 .advantages__slogan {
-  margin: 0;
-  font-size: 18px;
-  line-height: 26px;
+  @include bootstrap.title;
   font-weight: 700;
   margin-bottom: 35px;
 }

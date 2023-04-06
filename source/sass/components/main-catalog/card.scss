@@ -1,0 +1,23 @@
+@use "global/bootstrap";
+
+.card__image {
+  margin-bottom: 15px;
+}
+
+.card__detail-wrapper {
+  margin-bottom: 11px;
+}
+
+.card__title {
+  margin: 0;
+
+  @include bootstrap.subtitle;
+}
+
+.card__author-name {
+  margin: 0;
+}
+
+.card__statistics-amount {
+  margin-right: 14px;
+}

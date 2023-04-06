@@ -7,11 +7,14 @@
 @use "components/container";
 @use "components/header/main-header";
 @use "components/header/main-nav";
-@use "components/main-index/main-container";
 @use "components/main-index/main-hero";
 @use "components/main-index/advantages";
 @use "components/main-index/item";
 @use "components/main-index/services";
 @use "components/main-index/search-hotel";
 @use "components/footer/main-footer";
+@use "components/footer/contacts";
 @use "components/footer/social";
+@use "components/main-catalog/gallery";
+@use "components/main-catalog/card";
+@use "components/main-catalog/video-presentation";
