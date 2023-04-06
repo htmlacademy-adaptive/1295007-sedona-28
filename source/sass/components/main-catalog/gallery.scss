@@ -1,5 +1,9 @@
 @use "global/bootstrap";
 
+.gallery {
+  padding-top: 30px;
+}
+
 .gallery__wrapper {
   margin: 25px 20px;
 }
@@ -7,7 +11,6 @@
 .gallery__header {
   text-align: center;
   text-transform: uppercase;
-  margin-top: 30px;
   margin-bottom: 17px;
 }
 

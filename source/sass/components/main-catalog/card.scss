@@ -1,5 +1,9 @@
 @use "global/bootstrap";
 
+.card {
+
+}
+
 .card__image {
   margin-bottom: 15px;
 }
@@ -16,6 +20,10 @@
 
 .card__author-name {
   margin: 0;
+}
+
+.card__statistics-wrapper {
+
 }
 
 .card__statistics-amount {

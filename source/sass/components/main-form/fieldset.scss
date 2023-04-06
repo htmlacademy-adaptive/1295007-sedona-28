@@ -1,0 +1,55 @@
+@use "global/bootstrap";
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.fieldset__title {
+  text-align: center;
+
+  @include bootstrap.title;
+  margin-bottom: 20px;
+}
+
+.fieldset__wrapper {
+  width: 100%;
+}
+
+.fieldset__label {
+  text-transform: uppercase;
+}
+
+.fieldset__input-wrapper {
+
+}
+
+.fieldset__input {
+  width: 280px;
+  height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.fieldset__input-textarea {
+  font-family: inherit;
+  padding: 16px;
+  width: 279px;
+  min-height: 150px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.fieldset__list {
+  @include bootstrap.reset-list;
+}
+
+.fieldset__item {
+
+}
+
+.fieldset__control {
+
+}
