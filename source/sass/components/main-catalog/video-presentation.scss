@@ -10,7 +10,8 @@
 }
 
 .video-presentation__title {
-  @include bootstrap.title;
+  @include bootstrap.boldTitle;
+  color: bootstrap.$title-color;
   margin-bottom: 29px;
 }
 

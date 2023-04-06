@@ -1,7 +1,5 @@
 // Файл с часто используемыми элементами
 @use "global/bootstrap";
-// Базовые блоки
-@use "components/visually-hidden";
 // Блоки
 @use "components/page";
 @use "components/container";
@@ -25,3 +23,5 @@
 @use "components/main-form/form";
 @use "components/main-form/radio";
 @use "components/main-form/checkbox";
+@use "components/modal/modal-backdrop";
+@use "components/modal/modal";

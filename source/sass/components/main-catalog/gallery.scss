@@ -15,7 +15,8 @@
 }
 
 .gallery__title {
-  @include bootstrap.title;
+  @include bootstrap.boldTitle;
+  color: bootstrap.$title-color;
   margin-bottom: 35px;
 }
 

@@ -1,5 +1,7 @@
+@use "global/bootstrap";
+
 .main-hero {
-  background-color: #81b3d2;
+  background-color: bootstrap.$inner-bgColor;
   padding-top: 52px;
   padding-bottom: 67px;
 

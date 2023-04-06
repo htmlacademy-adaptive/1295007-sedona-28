@@ -1,9 +1,5 @@
 @use "global/bootstrap";
 
-.advantages {
-
-}
-
 .advantages__wrapper {
   width: 100%;
 }
@@ -15,8 +11,8 @@
 }
 
 .advantages__slogan {
-  @include bootstrap.title;
-  font-weight: 700;
+  @include bootstrap.boldTitle;
+  color: bootstrap.$title-color;
   margin-bottom: 35px;
 }
 
@@ -30,8 +26,8 @@
 
 .advantages__item {
   &--inside-blue {
-    color: #ffffff;
-    background-color: #81b3d2;
+    color: bootstrap.$white-color;
+    background-color: bootstrap.$inner-bgColor;
   }
 
   &--inside-gray {

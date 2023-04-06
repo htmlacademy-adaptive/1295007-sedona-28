@@ -1,11 +1,5 @@
+@use "global/bootstrap.scss";
+
 .copyright {
-
-}
-
-.copyright__title {
-
-}
-
-.copyright__link {
-
+  color: bootstrap.$title-color;
 }

@@ -2,7 +2,6 @@
 
 .services {
   background-color: bootstrap.$main-bgColor;
-  color: bootstrap.$black-color;
 }
 
 .services__wrapper {
@@ -26,13 +25,13 @@
 }
 
 .services__title {
-  margin: 0;
+  @include bootstrap.boldTitle;
+  color: bootstrap.$title-color;
   margin-top: 8px;
-
-  @include bootstrap.title;
   margin-bottom: 16px;
 }
 
 .services__description {
-  margin: 0;
+  @include bootstrap.normalTitle;
+  color: bootstrap.$secondary-color;
 }

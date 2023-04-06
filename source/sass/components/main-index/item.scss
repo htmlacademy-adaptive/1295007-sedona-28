@@ -11,14 +11,15 @@
 
   &--inside-gray {
     padding: 24px 24px;
+
+    .item__title {
+      color: bootstrap.$title-color;
+    }
   }
 }
 
 .item__title {
-  margin: 0;
-
-  @include bootstrap.title;
-  font-weight: 700;
+  @include bootstrap.boldTitle;
   margin-bottom: 11px;
 }
 

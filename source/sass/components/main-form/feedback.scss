@@ -2,11 +2,6 @@
 
 .feedback {
   padding-top: 36px;
-
-}
-
-.feedback__wrapper {
-
 }
 
 .feedback__header {
@@ -16,7 +11,8 @@
 }
 
 .feedback__title {
-  @include bootstrap.title;
+  @include bootstrap.boldTitle;
+  color: bootstrap.$title-color;
   margin-bottom: 24px;
 }
 

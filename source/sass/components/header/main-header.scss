@@ -1,9 +1,7 @@
 @use "global/bootstrap";
 
 .main-header {
-  font-weight: 700;
-
-  @include bootstrap.title;
+  @include bootstrap.boldTitle;
   text-align: center;
   text-transform: uppercase;
   color: bootstrap.$white-color;

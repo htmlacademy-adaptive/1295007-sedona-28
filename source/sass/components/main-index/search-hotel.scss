@@ -7,14 +7,11 @@
   padding-bottom: 49px;
 }
 
-.search-hotel__wrapper {
-
-}
-
 .search-hotel__title {
-  margin: 0;
+  @include bootstrap.boldTitle;
+  color: bootstrap.$title-color;
+  font-size: 21px;
   margin-bottom: 29px;
-  line-height: 26px;
 }
 
 .search-hotel__description {
@@ -23,8 +20,8 @@
 }
 
 .search-hotel__find-hotel {
-  width: 284px;
-  font-size: 21px;
-
   @include bootstrap.button;
+  width: 284px;
+  height: 58px;
+  padding: 16px 0;
 }

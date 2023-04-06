@@ -1,8 +1,7 @@
+@use "global/bootstrap.scss";
+
 .contacts {
   font-size: 21px;
   line-height: 26px;
-}
-
-.contacts__text {
-
+  color: bootstrap.$title-color;
 }

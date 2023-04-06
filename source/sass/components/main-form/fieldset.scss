@@ -7,9 +7,9 @@
 }
 
 .fieldset__title {
+  @include bootstrap.boldTitle;
+  color: bootstrap.$title-color;
   text-align: center;
-
-  @include bootstrap.title;
   margin-bottom: 20px;
 }
 
@@ -21,19 +21,20 @@
   text-transform: uppercase;
 }
 
-.fieldset__input-wrapper {
-
-}
-
 .fieldset__input {
+  @include bootstrap.boldTitle;
+  color: bootstrap.$title-color;
+
   width: 280px;
   height: 58px;
+  padding: 16px;
   background-color: #f2f2f2;
   border: none;
 }
 
 .fieldset__input-textarea {
-  font-family: inherit;
+  @include bootstrap.boldTitle;
+
   padding: 16px;
   width: 279px;
   min-height: 150px;
@@ -44,12 +45,4 @@
 
 .fieldset__list {
   @include bootstrap.reset-list;
-}
-
-.fieldset__item {
-
-}
-
-.fieldset__control {
-
 }
