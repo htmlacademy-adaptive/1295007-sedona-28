@@ -1,0 +1,5 @@
+@forward "./variables.scss"; // переменные
+@forward "./mixins.scss"; // миксины
+@forward "./fonts.scss"; // шрифты
+@forward "./base.scss"; // глобальные стили
+@forward "./utils.scss"; // утилиты (например, visually-hidden)

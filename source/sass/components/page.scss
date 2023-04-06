@@ -1,0 +1,8 @@
+@use "global/bootstrap.scss";
+
+.page__body {
+  @include bootstrap.normalTitle;
+  color: bootstrap.$secondary-color;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+}
