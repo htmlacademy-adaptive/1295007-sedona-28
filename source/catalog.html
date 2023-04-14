@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,19 +11,24 @@
 <body class="page__body">
   <div class="container">
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img src="#" width="185" height="96" alt="Логотип городка Седона.">
-      </a>
-      <nav class="main-header__nav main-nav">
+      <nav class="main-header__nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <a class="main-header__logo" href="#">
+          <img src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
+        </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current">Фото и видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--logo">
+            <a class="main-nav__logo" href="#">
+              <img class="main-nav__logo-img" src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
+            </a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -36,22 +42,23 @@
     <main class="main-container">
       <section class="main-hero">
         <h1 class="visually-hidden">Достопримечательности городка Седона</h1>
-        <img class="main-hero__image" src="#" width="282" height="146" alt="Надпись Седона на фоне гор.">
+        <img class="main-hero__image main-hero__image--other-page" src="img/text-sedona.svg" width="229" height="39"
+          alt="Надпись Седона на фоне гор.">
       </section>
       <section class="gallery">
-        <div class="gallery__wrapper">
           <header class="gallery__header">
             <h2 class="gallery__title">Фото и видео</h2>
             <p class="gallery__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
               политике и экономике.</p>
           </header>
-          <div class="photo-wrapper">
             <ul class="gallery__list">
               <li class="gallery__item card">
-                <img class="card__image" src="#" width="280" height="280" alt="">
+                <img class="card__image" src="img/photo-1-desktop.jpg" width="280" height="280" alt="">
                 <div class="card__detail-wrapper">
-                  <h3 class="card__title">Народные просторы</h3>
-                  <p class="card__author-name">Автор фото: Борис</p>
+                  <div class="card__author-wrapper">
+                    <h3 class="card__title">Народные просторы</h3>
+                    <p class="card__author-name">Автор фото: Борис</p>
+                  </div>
                   <div class="card__statistics-wrapper">
                     <img src="#" alt="Поставить палец вверх фотографии.">
                     <b class="card__statistics-amount">1350</b>
@@ -59,10 +66,12 @@
                 </div>
               </li>
               <li class="gallery__item card">
-                <img class="card__image" src="#" width="280" height="280" alt="">
+                <img class="card__image" src="img/photo-2-desktop.jpg" width="280" height="280" alt="">
                 <div class="card__detail-wrapper">
-                  <h3 class="card__title">Местная растительность</h3>
-                  <p class="card__author-name">Автор фото: Сергей</p>
+                  <div class="card__author-wrapper">
+                    <h3 class="card__title">Местная растительность</h3>
+                    <p class="card__author-name">Автор фото: Сергей</p>
+                  </div>
                   <div class="card__statistics-wrapper">
                     <img src="#" alt="Поставить палец вверх фотографии.">
                     <b class="card__statistics-amount">143</b>
@@ -70,10 +79,12 @@
                 </div>
               </li>
               <li class="gallery__item card">
-                <img class="card__image" src="#" width="280" height="280" alt="">
+                <img class="card__image" src="img/photo-3-desktop.jpg" width="280" height="280" alt="">
                 <div class="card__detail-wrapper">
-                  <h3 class="card__title">Дорога на север</h3>
-                  <p class="card__author-name">Автор фото: Петр</p>
+                  <div class="card__author-wrapper">
+                    <h3 class="card__title">Дорога на север</h3>
+                    <p class="card__author-name">Автор фото: Петр</p>
+                  </div>
                   <div class="card__statistics-wrapper">
                     <img src="#" alt="Поставить палец вверх фотографии.">
                     <b class="card__statistics-amount">96</b>
@@ -81,10 +92,12 @@
                 </div>
               </li>
               <li class="gallery__item card">
-                <img class="card__image" src="#" width="280" height="280" alt="">
+                <img class="card__image" src="img/photo-4-desktop.jpg" width="280" height="280" alt="">
                 <div class="card__detail-wrapper">
-                  <h3 class="card__title">Мост дьявола</h3>
-                  <p class="card__author-name">Автор фото: Антон</p>
+                  <div class="card__author-wrapper">
+                    <h3 class="card__title">Мост дьявола</h3>
+                    <p class="card__author-name">Автор фото: Антон</p>
+                  </div>
                   <div class="card__statistics-wrapper">
                     <img src="#" alt="Поставить палец вверх фотографии.">
                     <b class="card__statistics-amount">254</b>
@@ -92,8 +105,6 @@
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
       </section>
       <section class="video-presentation">
         <div class="video-presentation__wrapper">
@@ -102,7 +113,7 @@
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
         </div>
-        <img src="#" width="280" height="177" alt="Видеопрезентация Седоны.">
+        <img class="video-presentation__image" src="img/video-presentation.jpg" width="280" height="177" alt="Видеопрезентация Седоны.">
       </section>
     </main>
     <footer class="main-footer">
@@ -134,6 +145,7 @@
       </div>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

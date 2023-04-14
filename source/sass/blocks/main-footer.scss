@@ -6,17 +6,38 @@
 
 .main-footer__wrapper {
   padding: 33px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin: 36px 60px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: bootstrap.$desktop-width) {
+      margin: 36px 120px;
+    }
+  }
 }
 
 .main-footer__contacts {
-  margin-bottom: 30px;
+  width: 136px;
 }
+
 
 .main-footer__social {
   @include bootstrap.reset-list;
-  margin-bottom: 30px;
+  width: 156px;
+  margin: auto;
+  gap: 6px;
+  display: flex;
 }
 
 .main-footer__copyright {
+  width: 129px;
   text-transform: uppercase;
 }

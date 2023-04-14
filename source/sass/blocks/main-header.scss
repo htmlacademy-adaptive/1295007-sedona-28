@@ -2,18 +2,18 @@
 
 .main-header {
   @include bootstrap.boldTitle;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
   color: bootstrap.$white-color;
+  height: 56px;
+  background-color: bootstrap.$main-bgColor;
 }
 
 .main-header__logo {
-  position: absolute;
-  margin: 0 auto;
-  margin-right: 100px;
-}
+  text-align: center;
 
-.main-header__nav {
-  position: relative;
-  width: 100%;
+  @media (min-width: bootstrap.$tablet-width) {
+    display: none;
+  }
 }

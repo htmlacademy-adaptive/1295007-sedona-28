@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,19 +11,24 @@
 <body class="page__body">
   <div class="container">
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img src="#" width="185" height="96" alt="Логотип городка Седона.">
-      </a>
-      <nav class="main-header__nav main-nav">
+      <nav class="main-header__nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <a class="main-header__logo" href="#">
+          <img src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
+        </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--logo">
+            <a class="main-nav__logo" href="#">
+              <img class="main-nav__logo-img" src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
+            </a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current">Форма отзыва</a>
@@ -36,7 +42,7 @@
     <main class="main-container">
       <section class="main-hero">
         <h1 class="visually-hidden">Здесь вы можете оставить отзыв</h1>
-        <img class="main-hero__image" src="#" width="282" height="146" alt="Надпись Седона на фоне гор.">
+        <img class="main-hero__image-other-page" src="img/text-sedona.svg" width="229" height="39" alt="Надпись Седона на фоне гор.">
       </section>
       <section class="feedback">
         <div class="feedback__wrapper">
@@ -196,6 +202,7 @@
       </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

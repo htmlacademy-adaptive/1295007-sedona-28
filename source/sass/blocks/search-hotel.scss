@@ -3,8 +3,25 @@
 .search-hotel {
   text-align: center;
   text-transform: uppercase;
-  padding-top: 39px;
-  padding-bottom: 49px;
+}
+
+.search-hotel__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 38px 0 32px;
+  margin: 0 auto;
+  min-width: 262px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 60px 0 45px;
+    min-width: 435px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    padding: 61px 0 44px;
+    min-width: 435px;
+  }
 }
 
 .search-hotel__title {
@@ -16,12 +33,22 @@
 
 .search-hotel__description {
   margin: 0;
-  margin-bottom: 32px;
 }
 
 .search-hotel__find-hotel {
   @include bootstrap.button;
   width: 284px;
-  height: 58px;
+  min-height: 58px;
   padding: 16px 0;
+  margin-bottom: 49px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    width: 458px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    width: 458px;
+    margin-bottom: 66px;
+  }
 }

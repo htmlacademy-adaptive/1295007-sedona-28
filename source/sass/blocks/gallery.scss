@@ -1,34 +1,86 @@
 @use "global/bootstrap";
 
 .gallery {
-  padding-top: 30px;
-}
+  padding-top: 37px;
 
-.gallery__wrapper {
-  margin: 25px 20px;
-}
+  @media (min-width: bootstrap.$tablet-width) {
+    padding-top: 66px;
+  }
 
-.gallery__header {
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 17px;
-}
+  @media (min-width: bootstrap.$desktop-width) {
+    padding-top: 100px;
+  }
 
-.gallery__title {
-  @include bootstrap.boldTitle;
-  color: bootstrap.$title-color;
-  margin-bottom: 35px;
-}
+  &__header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    min-width: 280px;
 
-.gallery__intro {
-  margin: 0;
-}
+    @media (min-width: bootstrap.$tablet-width) {
+      width: 458px;
+      margin-bottom: 67px;
+    }
 
-.gallery__list {
-  @include bootstrap.reset-list;
-}
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-bottom: 65px;
+    }
+  }
 
-.gallery__item {
-  width: 280px;
-  min-height: 375px;
+  &__title {
+    @include bootstrap.boldTitle;
+    color: bootstrap.$title-color;
+    margin-bottom: 35px;
+  }
+
+  &__intro {
+    margin: 0;
+  }
+
+  &__list {
+    @include bootstrap.reset-list;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0 60px;
+    }
+
+    @media (min-width: bootstrap.$tablet-width) {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    min-width: 280px;
+    min-height: 375px;
+    padding: 24px 20px 25px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      min-height: 347px;
+      padding: 0;
+      border: none;
+
+      &:not(:first-child) {
+        width: 50%;
+      }
+
+      &:first-child {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      position: relative;
+    }
+  }
 }

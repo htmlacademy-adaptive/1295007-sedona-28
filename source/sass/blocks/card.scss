@@ -1,24 +1,57 @@
 @use "global/bootstrap";
 
-.card__image {
-  margin-bottom: 15px;
-}
+.card {
+  &__image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 15px;
 
-.card__detail-wrapper {
-  margin-bottom: 11px;
-}
+    @media (min-width: bootstrap.$tablet-width) {
+      margin: 0;
+    }
+  }
 
-.card__title {
-  @include bootstrap.normalTitle;
-  color: bootstrap.$title-color;
-  text-transform: uppercase;
-}
+  &__detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
 
-.card__author-name {
-  margin: 0;
-}
+    @media (min-width: bootstrap.$tablet-width) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 22px 20px 15px;
+      background-color: #f2f2f2;
+    }
 
-.card__statistics-amount {
-  margin-right: 14px;
-  color: bootstrap.$title-color;
+    @media (min-width: bootstrap.$desktop-width) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: bootstrap.$white-color;
+    }
+  }
+
+  &__title {
+    @include bootstrap.normalTitle;
+    color: bootstrap.$title-color;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+    @media (min-width: bootstrap.$desktop-width) {
+      color: bootstrap.$white-color;
+      margin-bottom: 4px;
+    }
+  }
+
+  &__author-name {
+    margin: 0;
+  }
+
+  &__statistics-amount {
+    color: bootstrap.$title-color;
+  }
 }
