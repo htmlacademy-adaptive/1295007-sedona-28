@@ -1,0 +1,8 @@
+@use "global/bootstrap";
+
+.checkbox {
+  &__text {
+    @include bootstrap.boldTitle;
+    color: bootstrap.$title-color;
+  }
+}

@@ -1,0 +1,19 @@
+@use "global/bootstrap";
+
+.main-header {
+  @include bootstrap.boldTitle;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: bootstrap.$white-color;
+  height: 56px;
+  background-color: bootstrap.$main-bgColor;
+
+  &__logo {
+    text-align: center;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      display: none;
+    }
+  }
+}

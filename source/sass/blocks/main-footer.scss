@@ -1,0 +1,43 @@
+@use "global/bootstrap";
+
+.main-footer {
+  text-align: center;
+
+  &__wrapper {
+    padding: 33px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      margin: 36px 60px;
+      padding: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (min-width: bootstrap.$desktop-width) {
+        margin: 36px 120px;
+      }
+    }
+  }
+
+  &__contacts {
+    width: 136px;
+  }
+
+
+  &__social {
+    @include bootstrap.reset-list;
+    width: 156px;
+    margin: auto;
+    gap: 6px;
+    display: flex;
+  }
+
+  &__copyright {
+    width: 129px;
+    text-transform: uppercase;
+  }
+}
