@@ -3,27 +3,27 @@
 .modal {
   background-color: bootstrap.$main-bgColor;
   width: 320px;
-}
 
-.modal__wrapper {
-  text-align: center;
-  text-transform: uppercase;
-}
+  &__wrapper {
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-.modal__title {
-  @include bootstrap.boldTitle;
-  color: bootstrap.$title-color;
-  margin-bottom: 36px;
-}
+  &__title {
+    @include bootstrap.boldTitle;
+    color: bootstrap.$title-color;
+    margin-bottom: 36px;
+  }
 
-.modal__message {
-  margin: 0;
-  margin-bottom: 28px;
-}
+  &__message {
+    margin: 0;
+    margin-bottom: 28px;
+  }
 
-.modal__button {
-  @include bootstrap.button;
-  width: 180px;
-  height: 58px;
-  padding: 16px 0;
+  &__button {
+    @include bootstrap.button;
+    width: 180px;
+    height: 58px;
+    padding: 16px 0;
+  }
 }

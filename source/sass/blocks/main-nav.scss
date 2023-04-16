@@ -122,6 +122,10 @@
   @media (min-width: bootstrap.$tablet-width) {
     @include bootstrap.normalTitle;
     color: bootstrap.$title-color;
+
+    &--current {
+      color: #766357;
+    }
   }
 }
 

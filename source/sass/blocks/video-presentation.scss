@@ -3,50 +3,54 @@
 .video-presentation {
   text-align: center;
   text-transform: uppercase;
-}
-
-.video-presentation__wrapper {
-  display: flex;
-  flex-direction: column;
-  min-width: 266px;
-  margin: 0 auto;
-  padding: 17px 0 38px;
-
-  @media (min-width: bootstrap.$tablet-width) {
-    padding: 58px 0 66px;
-    width: 445px;
-  }
-
-  @media (min-width: bootstrap.$desktop-width) {
-    padding: 62px 0 64px;
-  }
-}
-
-.video-presentation__title {
-  @include bootstrap.boldTitle;
-  color: bootstrap.$title-color;
-  margin-bottom: 29px;
-}
-
-.video-presentation__description {
-  margin: 0;
-}
-
-.video-presentation__image {
-  width: 100%;
-  display: block;
-  min-height: 177px;
+  padding: 0 20px;
 
   @media (min-width: bootstrap.$tablet-width) {
     padding: 0 60px;
-    height: 500px;
-    margin-bottom: 60px;
   }
 
-  @media (min-width: bootstrap.$desktop-width) {
-    min-width: 800px;
+  &__wrapper {
     display: flex;
+    flex-direction: column;
+    min-width: 266px;
     margin: 0 auto;
-    margin-bottom: 84px;
+    padding: 17px 0 38px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 58px 0 66px;
+      width: 445px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      padding: 62px 0 64px;
+    }
+  }
+
+  &__title {
+    @include bootstrap.boldTitle;
+    color: bootstrap.$title-color;
+    margin-bottom: 29px;
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
+    min-height: 177px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      height: 500px;
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      min-width: 800px;
+      display: flex;
+      margin: 0 auto;
+      margin-bottom: 84px;
+    }
   }
 }

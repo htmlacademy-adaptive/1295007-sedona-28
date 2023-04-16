@@ -42,7 +42,7 @@
     <main class="main-container">
       <section class="main-hero">
         <h1 class="visually-hidden">Здесь вы можете оставить отзыв</h1>
-        <img class="main-hero__image-other-page" src="img/text-sedona.svg" width="229" height="39"
+        <img class="main-hero__image main-hero__image--other-page" src="img/text-sedona.svg" width="229" height="39"
           alt="Надпись Седона на фоне гор.">
       </section>
       <section class="feedback">
@@ -56,38 +56,42 @@
           <form class="feedback__form form" action="#" method="post">
             <fieldset class="form__fieldset fieldset">
               <legend class="fieldset__title">Представьтесь:</legend>
-              <div class="fieldset__wrapper">
-                <label class="fieldset__label" for="firstname">ИМЯ<sup>*</sup>:</label>
-                <input class="fieldset__input" type="text" name="firstname" id="firstname" value="Пётр"
-                  placeholder="Введите имя" required>
-              </div>
-              <div class="fieldset__wrapper">
-                <label class="fieldset__label" for="lastname">ФАМИЛИЯ<sup>*</sup>:</label>
-                <input class="fieldset__input" type="text" name="lastname" id="lastname" value="Пустота"
-                  placeholder="Введите фамилию" required>
-              </div>
-              <div class="fieldset__wrapper">
-                <label class="fieldset__label" for="surname">ОТЧЕСТВО:</label>
-                <input class="fieldset__input" type="text" name="surname" id="surname" value="Викторович"
-                  placeholder="Введите отчество">
+              <div class="fieldset__group-wrapper">
+                <div class="fieldset__wrapper">
+                  <label class="fieldset__label" for="firstname">ИМЯ<sup>*</sup>:</label>
+                  <input class="fieldset__input" type="text" name="firstname" id="firstname" value="Пётр"
+                    placeholder="Введите имя" required>
+                </div>
+                <div class="fieldset__wrapper">
+                  <label class="fieldset__label" for="lastname">ФАМИЛИЯ<sup>*</sup>:</label>
+                  <input class="fieldset__input" type="text" name="lastname" id="lastname" value="Пустота"
+                    placeholder="Введите фамилию" required>
+                </div>
+                <div class="fieldset__wrapper">
+                  <label class="fieldset__label" for="surname">ОТЧЕСТВО:</label>
+                  <input class="fieldset__input" type="text" name="surname" id="surname" value="Викторович"
+                    placeholder="Введите отчество">
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__fieldset fieldset">
               <legend class="fieldset__title">Контактная информация:</legend>
-              <div class="fieldset__wrapper">
-                <label class="fieldset__label" for="mobile-phone">КОНТАКТНЫЙ ТЕЛЕФОН<sup>*</sup>:</label>
-                <div class="fieldset__input-wrapper">
-                  <input class="fieldset__input" type="tel" name="mobile-phone" id="mobile-phone"
-                    placeholder="Введите телефон" required>
-                  <img src="#" alt="Изображение телефона.">
+              <div class="fieldset__group-wrapper">
+                <div class="fieldset__wrapper">
+                  <label class="fieldset__label" for="mobile-phone">КОНТАКТНЫЙ ТЕЛЕФОН<sup>*</sup>:</label>
+                  <div class="fieldset__input-wrapper">
+                    <input class="fieldset__input" type="tel" name="mobile-phone" id="mobile-phone"
+                      placeholder="Введите телефон" required>
+                    <img src="#" alt="Изображение телефона.">
+                  </div>
                 </div>
-              </div>
-              <div class="fieldset__wrapper">
-                <label class="fieldset__label" for="email">ЭЛЕКТРОННАЯ ПОЧТА<sup>*</sup>:</label>
-                <div class="fieldset__input-wrapper">
-                  <input class="fieldset__input" type="email" name="email" id="email" placeholder="Введите e-mail"
-                    required>
-                  <img src="#" alt="Изображение почты.">
+                <div class="fieldset__wrapper">
+                  <label class="fieldset__label" for="email">ЭЛЕКТРОННАЯ ПОЧТА<sup>*</sup>:</label>
+                  <div class="fieldset__input-wrapper">
+                    <input class="fieldset__input" type="email" name="email" id="email" placeholder="Введите e-mail"
+                      required>
+                    <img src="#" alt="Изображение почты.">
+                  </div>
                 </div>
               </div>
             </fieldset>

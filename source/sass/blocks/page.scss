@@ -5,10 +5,10 @@
   height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
-}
 
-.page__body {
-  margin: 0;
-  color: bootstrap.$secondary-color;
-  background-color: bootstrap.$main-bgColor;
+  &__body {
+    margin: 0;
+    color: bootstrap.$secondary-color;
+    background-color: bootstrap.$main-bgColor;
+  }
 }

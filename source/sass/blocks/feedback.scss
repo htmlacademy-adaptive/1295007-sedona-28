@@ -1,26 +1,31 @@
 @use "global/bootstrap";
 
 .feedback {
-  padding-top: 36px;
-}
+  &__wrapper {
+    padding: 36px 20px 22px;
+  }
 
-.feedback__header {
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 28px;
-}
+  &__header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    min-width: 280px;
+  }
 
-.feedback__title {
-  @include bootstrap.boldTitle;
-  color: bootstrap.$title-color;
-  margin-bottom: 24px;
-}
+  &__title {
+    @include bootstrap.boldTitle;
+    color: bootstrap.$title-color;
+    margin-bottom: 24px;
+  }
 
-.feedback__slogan {
-  margin: 0;
-}
+  &__slogan {
+    margin: 0;
+  }
 
-.feedback__form {
-  width: 280px;
-  padding: 0 20px;
+  &__form {
+    width: 280px;
+  }
 }
