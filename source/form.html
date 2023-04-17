@@ -25,11 +25,6 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="main-nav__item main-nav__item--logo">
-            <a class="main-nav__logo" href="#">
-              <img class="main-nav__logo-img" src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
-            </a>
-          </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current">Форма отзыва</a>
           </li>
@@ -42,61 +37,63 @@
     <main class="main-container">
       <section class="main-hero">
         <h1 class="visually-hidden">Здесь вы можете оставить отзыв</h1>
-        <img class="main-hero__image main-hero__image--other-page" src="img/text-sedona.svg" width="229" height="39"
+        <img class="main-hero__image" src="img/text-sedona.svg" width="229" height="39"
           alt="Надпись Седона на фоне гор.">
       </section>
       <section class="feedback">
         <div class="feedback__wrapper">
-          <header class="feedback__header">
-            <h2 class="feedback__title">Оставьте свой отзыв</h2>
-            <p class="feedback__slogan">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
+          <header class="feedback__header header">
+            <h2 class="header__title header__title--form">Оставьте свой отзыв</h2>
+            <p class="header__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
               вами
               достопримечательностях</p>
           </header>
           <form class="feedback__form form" action="#" method="post">
             <fieldset class="form__fieldset fieldset">
-              <legend class="fieldset__title">Представьтесь:</legend>
-              <div class="fieldset__group-wrapper">
-                <div class="fieldset__wrapper">
-                  <label class="fieldset__label" for="firstname">ИМЯ<sup>*</sup>:</label>
-                  <input class="fieldset__input" type="text" name="firstname" id="firstname" value="Пётр"
+              <h3 class="fieldset__title">Представьтесь:</h3>
+              <div class="fieldset__input-text input-text">
+                <label class="input-text__label" for="firstname">ИМЯ<sup>*</sup>:</label>
+                <div class="fieldset__input-wrapper">
+                  <input class="input-text__input" type="text" name="firstname" id="firstname" value="Пётр"
                     placeholder="Введите имя" required>
                 </div>
-                <div class="fieldset__wrapper">
-                  <label class="fieldset__label" for="lastname">ФАМИЛИЯ<sup>*</sup>:</label>
-                  <input class="fieldset__input" type="text" name="lastname" id="lastname" value="Пустота"
+              </div>
+              <div class="fieldset__input-text input-text">
+                <label class="input-text__label" for="lastname">ФАМИЛИЯ<sup>*</sup>:</label>
+                <div class="fieldset__input-wrapper">
+                  <input class="input-text__input" type="text" name="lastname" id="lastname" value="Пустота"
                     placeholder="Введите фамилию" required>
                 </div>
-                <div class="fieldset__wrapper">
-                  <label class="fieldset__label" for="surname">ОТЧЕСТВО:</label>
-                  <input class="fieldset__input" type="text" name="surname" id="surname" value="Викторович"
+              </div>
+              <div class="fieldset__input-text input-text">
+                <label class="input-text__label" for="surname">ОТЧЕСТВО:</label>
+                <div class="fieldset__input-wrapper">
+                  <input class="input-text__input" type="text" name="surname" id="surname" value="Викторович"
                     placeholder="Введите отчество">
                 </div>
               </div>
             </fieldset>
             <fieldset class="form__fieldset fieldset">
-              <legend class="fieldset__title">Контактная информация:</legend>
-              <div class="fieldset__group-wrapper">
-                <div class="fieldset__wrapper">
-                  <label class="fieldset__label" for="mobile-phone">КОНТАКТНЫЙ ТЕЛЕФОН<sup>*</sup>:</label>
-                  <div class="fieldset__input-wrapper">
-                    <input class="fieldset__input" type="tel" name="mobile-phone" id="mobile-phone"
-                      placeholder="Введите телефон" required>
-                    <img src="#" alt="Изображение телефона.">
-                  </div>
+              <h3 class="fieldset__title">Контактная информация:</h3>
+              <div class="fieldset__input-text input-text">
+                <label class="input-text__label" for="mobile-phone">КОНТАКТНЫЙ ТЕЛЕФОН<sup>*</sup>:</label>
+                <div class="fieldset__input-wrapper">
+                  <input class="input-text__input" type="tel" name="mobile-phone" id="mobile-phone"
+                    placeholder="Введите телефон" required>
+                  <img src="#" alt="Изображение телефона.">
                 </div>
-                <div class="fieldset__wrapper">
-                  <label class="fieldset__label" for="email">ЭЛЕКТРОННАЯ ПОЧТА<sup>*</sup>:</label>
-                  <div class="fieldset__input-wrapper">
-                    <input class="fieldset__input" type="email" name="email" id="email" placeholder="Введите e-mail"
-                      required>
-                    <img src="#" alt="Изображение почты.">
-                  </div>
+              </div>
+              <div class="fieldset__input-text input-text">
+                <label class="input-text__label" for="email">ЭЛЕКТРОННАЯ ПОЧТА<sup>*</sup>:</label>
+                <div class="fieldset__input-wrapper">
+                  <input class="input-text__input" type="email" name="email" id="email" placeholder="Введите e-mail"
+                    required>
+                  <img src="#" alt="Изображение почты.">
                 </div>
               </div>
             </fieldset>
             <fieldset class="form__fieldset fieldset">
-              <legend class="fieldset__title">Ваше общее впечатление:</legend>
+              <h3 class="fieldset__title">Ваше общее впечатление:</h3>
               <ul class="fieldset__list">
                 <li class="fieldset__item">
                   <label class="fieldset__control radio">
@@ -119,7 +116,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__fieldset fieldset">
-              <legend class="fieldset__title">Посещенные достопримечательности:</legend>
+              <h3 class="fieldset__title">Посещенные достопримечательности:</h3>
               <ul class="fieldset__list">
                 <li class="fieldset__item">
                   <label class="fieldset__control checkbox">
@@ -148,7 +145,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__fieldset fieldset">
-              <legend class="fieldset__title">Опишите свои эмоции:</legend>
+              <h3 class="fieldset__title">Опишите свои эмоции:</h3>
               <label class="visually-hidden" for="comment">Поле для отзыва</label>
               <textarea class="fieldset__input-textarea" name="comment" id="comment"
                 placeholder="Опишите подробно все свои восторги"></textarea>

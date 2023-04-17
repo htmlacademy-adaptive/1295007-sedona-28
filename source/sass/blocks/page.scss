@@ -4,11 +4,10 @@
   @include bootstrap.normalTitle;
   height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: 400;
+}
 
-  &__body {
-    margin: 0;
-    color: bootstrap.$secondary-color;
-    background-color: bootstrap.$main-bgColor;
-  }
+.page__body {
+  margin: 0;
+  color: bootstrap.$secondary-color;
+  background-color: bootstrap.$main-colorbg;
 }

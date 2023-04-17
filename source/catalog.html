@@ -25,11 +25,6 @@
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current">Фото и видео</a>
           </li>
-          <li class="main-nav__item main-nav__item--logo">
-            <a class="main-nav__logo" href="#">
-              <img class="main-nav__logo-img" src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
-            </a>
-          </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
@@ -42,18 +37,20 @@
     <main class="main-container">
       <section class="main-hero">
         <h1 class="visually-hidden">Достопримечательности городка Седона</h1>
-        <img class="main-hero__image main-hero__image--other-page" src="img/text-sedona.svg" width="229" height="39"
+        <img class="main-hero__image" src="img/text-sedona.svg" width="229" height="39"
           alt="Надпись Седона на фоне гор.">
       </section>
       <section class="gallery">
-        <header class="gallery__header">
-          <h2 class="gallery__title">Фото и видео</h2>
-          <p class="gallery__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        <header class="gallery__header header">
+          <h2 class="header__title">Фото и видео</h2>
+          <p class="header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
             политике и экономике.</p>
         </header>
         <ul class="gallery__list">
-          <li class="gallery__item card">
-            <img class="card__image" src="img/photo-1-desktop.jpg" width="280" height="280" alt="">
+          <li class="gallery__item gallery__item--big card">
+            <div class="card__image-wrapper card__image-wrapper--big">
+              <img class="card__image" src="img/photo-1-desktop.jpg" width="280" height="280" alt="">
+            </div>
             <div class="card__detail-wrapper">
               <div class="card__author-wrapper">
                 <h3 class="card__title">Народные просторы</h3>
@@ -66,7 +63,9 @@
             </div>
           </li>
           <li class="gallery__item card">
-            <img class="card__image" src="img/photo-2-desktop.jpg" width="280" height="280" alt="">
+            <div class="card__image-wrapper">
+              <img class="card__image" src="img/photo-2-desktop.jpg" width="280" height="280" alt="">
+            </div>
             <div class="card__detail-wrapper">
               <div class="card__author-wrapper">
                 <h3 class="card__title">Местная растительность</h3>
@@ -79,7 +78,9 @@
             </div>
           </li>
           <li class="gallery__item card">
-            <img class="card__image" src="img/photo-3-desktop.jpg" width="280" height="280" alt="">
+            <div class="card__image-wrapper">
+              <img class="card__image" src="img/photo-3-desktop.jpg" width="280" height="280" alt="">
+            </div>
             <div class="card__detail-wrapper">
               <div class="card__author-wrapper">
                 <h3 class="card__title">Дорога на север</h3>
@@ -92,7 +93,9 @@
             </div>
           </li>
           <li class="gallery__item card">
-            <img class="card__image" src="img/photo-4-desktop.jpg" width="280" height="280" alt="">
+            <div class="card__image-wrapper">
+              <img class="card__image" src="img/photo-4-desktop.jpg" width="280" height="280" alt="">
+            </div>
             <div class="card__detail-wrapper">
               <div class="card__author-wrapper">
                 <h3 class="card__title">Мост дьявола</h3>
@@ -107,9 +110,9 @@
         </ul>
       </section>
       <section class="video-presentation">
-        <div class="video-presentation__wrapper">
-          <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
-          <p class="video-presentation__description">
+        <div class="video-presentation__wrapper header">
+          <h2 class="header__title">Все еще сомневаетесь?</h2>
+          <p class="header__text">
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
         </div>

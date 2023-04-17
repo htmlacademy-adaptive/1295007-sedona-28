@@ -1,29 +1,29 @@
 @use "global/bootstrap.scss";
 
 .modal {
-  background-color: bootstrap.$main-bgColor;
+  background-color: bootstrap.$main-colorbg;
   width: 320px;
+}
 
-  &__wrapper {
-    text-align: center;
-    text-transform: uppercase;
-  }
+.modal__wrapper {
+  text-align: center;
+  text-transform: uppercase;
+}
 
-  &__title {
-    @include bootstrap.boldTitle;
-    color: bootstrap.$title-color;
-    margin-bottom: 36px;
-  }
+.modal__title {
+  @include bootstrap.boldTitle;
+  color: bootstrap.$title-color;
+  margin-bottom: 36px;
+}
 
-  &__message {
-    margin: 0;
-    margin-bottom: 28px;
-  }
+.modal__message {
+  margin: 0;
+  margin-bottom: 28px;
+}
 
-  &__button {
-    @include bootstrap.button;
-    width: 180px;
-    height: 58px;
-    padding: 16px 0;
-  }
+.modal__button {
+  @include bootstrap.button;
+  width: 180px;
+  height: 58px;
+  padding: 16px 0;
 }

@@ -4,70 +4,99 @@
   text-align: center;
   text-transform: uppercase;
 
-  &__wrapper-text {
-    padding: 37px 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  &--inside-blue {
+    color: bootstrap.$white-color;
+    background-color: bootstrap.$inner-colorbg;
+  }
+
+  &--wrappers {
+    background-color: #eeeeee;
+    color: bootstrap.$title-color;
+    padding: 0 18px 28px;
+    padding-bottom: 0;
 
     @media (min-width: bootstrap.$tablet-width) {
-      min-height: 256px;
-      padding: 52px 33px 30px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0;
+    }
+  }
+}
 
-      &--reversed {
-        order: 1;
-      }
+.item__wrapper {
+  @media (min-width: bootstrap.$tablet-width) {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    &--reversed {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+}
+
+.item__wrapper-text {
+  padding: 37px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    min-height: 256px;
+    padding: 52px 33px 30px;
+
+    &--reversed {
+      order: 1;
+    }
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    padding: 52px 50px 51px;
+  }
+
+  &--inside-gray {
+    padding: 24px 0;
+    padding-bottom: 28px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #d6d6d6;
+    }
+
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 41px 33px 63px;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
-      padding: 52px 50px 51px;
-    }
-
-    &--inside-gray {
-      padding: 24px 0 24px;
-      padding-bottom: 28px;
-      border-bottom: 1px solid #d6d6d6;
-
-      @media (min-width: bootstrap.$tablet-width) {
-        padding: 41px 33px 63px;
-      }
-
-      @media (min-width: bootstrap.$desktop-width) {
-        padding: 52px 50px;
-      }
-    }
-
-    &--no-border {
-      border-bottom: none;
+      padding: 52px 50px;
     }
   }
+}
 
-  &__wrapper-image {
-    height: 260px;
+.item__wrapper-image {
+  height: 260px;
 
-    @media (min-width: bootstrap.$tablet-width) {
-      height: 100%;
-    }
-  }
-
-  &__image {
-    width: 100%;
+  @media (min-width: bootstrap.$tablet-width) {
     height: 100%;
-    display: block;
-    object-fit: cover;
   }
+}
 
-  &__title {
-    @include bootstrap.boldTitle;
-    margin-bottom: 11px;
-  }
+.item__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
 
-  &__number {
-    display: block;
-    margin-bottom: 17px;
-  }
+.item__title {
+  @include bootstrap.boldTitle;
+  margin-bottom: 11px;
+}
 
-  &__description {
-    margin: 0;
-  }
+.item__number {
+  display: block;
+  margin-bottom: 17px;
+}
+
+.item__description {
+  margin: 0;
 }

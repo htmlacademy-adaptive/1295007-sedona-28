@@ -6,14 +6,12 @@
   text-align: center;
   text-transform: uppercase;
   color: bootstrap.$white-color;
-  height: 56px;
-  background-color: bootstrap.$main-bgColor;
+  min-height: 56px;
+  background-color: bootstrap.$main-colorbg;
+}
 
-  &__logo {
-    text-align: center;
-
-    @media (min-width: bootstrap.$tablet-width) {
-      display: none;
-    }
-  }
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
