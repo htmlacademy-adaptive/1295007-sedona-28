@@ -25,7 +25,7 @@
     margin-bottom: 29px;
   }
 
-  &--home::before {
+  &--icon-home::before {
     position: absolute;
     content: "";
     background-image: url("../img/icon-house.svg");
@@ -46,7 +46,7 @@
     }
   }
 
-  &--food::before {
+  &--icon-food::before {
     position: absolute;
     content: "";
     background-image: url("../img/icon-burger.svg");
@@ -67,7 +67,7 @@
     }
   }
 
-  &--souvenirs::before {
+  &--icon-souvenirs::before {
     position: absolute;
     content: "";
     background-image: url("../img/icon-gift.svg");

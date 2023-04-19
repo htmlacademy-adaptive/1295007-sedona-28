@@ -2,12 +2,68 @@
 
 .modal {
   background-color: bootstrap.$main-colorbg;
-  width: 320px;
+  width: 100%;
+  padding: 45px 0 35px;
+  text-align: center;
+
+  &--failure {
+    padding: 45px 0 35px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 50px 0 49px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      padding: 48px 0 49px;
+    }
+  }
+
+  &--success {
+    padding: 36px 0 0;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 53px 0 0;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      padding-top: 51px;
+    }
+  }
 }
 
 .modal__wrapper {
   text-align: center;
   text-transform: uppercase;
+  width: 237px;
+  margin: 0 auto;
+
+  &--failure {
+    width: 237px;
+    margin-bottom: 28px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      width: 307px;
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &--success {
+    width: 244px;
+    margin-bottom: 27px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      width: 444px;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-bottom: 28px;
+    }
+  }
 }
 
 .modal__title {
@@ -18,12 +74,29 @@
 
 .modal__message {
   margin: 0;
-  margin-bottom: 28px;
+}
+
+.modal__button-wrapper {
+  background-color: #f2f2f2;
 }
 
 .modal__button {
   @include bootstrap.button;
   width: 180px;
-  height: 58px;
-  padding: 16px 0;
+  padding: 18px 14px;
+  margin: 0 auto;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    width: 272px;
+  }
+
+  &--close {
+    width: 280px;
+    margin: 20px auto;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      width: 458px;
+      margin: 44px auto;
+    }
+  }
 }

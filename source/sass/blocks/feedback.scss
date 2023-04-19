@@ -1,19 +1,30 @@
 @use "global/bootstrap";
 
 .feedback__wrapper {
-  padding: 36px 20px 22px;
+  padding: 36px 0 22px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    padding-top: 115px;
+  }
 }
 
 .feedback__header {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 auto;
-  margin-bottom: 28px;
-  min-width: 280px;
-}
-
-.feedback__form {
+  margin: 0 auto 28px;
   width: 280px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    width: 436px;
+    margin-bottom: 108px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    margin-bottom: 68px;
+  }
 }

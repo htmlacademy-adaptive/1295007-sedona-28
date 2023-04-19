@@ -6,20 +6,17 @@
 }
 
 .advantages__header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: 0 auto;
   padding: 32px 0;
-  min-width: 284px;
+  width: 284px;
 
   @media (min-width: bootstrap.$tablet-width) {
     padding: 47px 55px;
-    min-width: 520px;
+    width: 520px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
     padding: 59px 44px;
-    min-width: 484px;
+    width: 483px;
   }
 }

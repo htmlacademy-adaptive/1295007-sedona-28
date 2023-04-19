@@ -13,7 +13,7 @@
 .video-presentation__wrapper {
   display: flex;
   flex-direction: column;
-  min-width: 266px;
+  width: 266px;
   margin: 0 auto;
   padding: 17px 0 38px;
 
@@ -31,6 +31,7 @@
   width: 100%;
   display: block;
   min-height: 177px;
+  object-fit: cover;
 
   @media (min-width: bootstrap.$tablet-width) {
     height: 500px;
@@ -39,8 +40,6 @@
 
   @media (min-width: bootstrap.$desktop-width) {
     min-width: 800px;
-    display: flex;
-    margin: 0 auto;
     margin-bottom: 84px;
   }
 }

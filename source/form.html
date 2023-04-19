@@ -49,52 +49,58 @@
               достопримечательностях</p>
           </header>
           <form class="feedback__form form" action="#" method="post">
-            <fieldset class="form__fieldset fieldset">
-              <h3 class="fieldset__title">Представьтесь:</h3>
-              <div class="fieldset__input-text input-text">
-                <label class="input-text__label" for="firstname">ИМЯ<sup>*</sup>:</label>
-                <div class="fieldset__input-wrapper">
-                  <input class="input-text__input" type="text" name="firstname" id="firstname" value="Пётр"
-                    placeholder="Введите имя" required>
+            <div class="form__wrapper-fieldset">
+              <fieldset class="form__fieldset fieldset">
+                <h3 class="fieldset__title">Представьтесь:</h3>
+                <div class="fieldset__wrapper">
+                  <div class="fieldset__input-text input-text">
+                    <label class="input-text__label" for="firstname">ИМЯ<sup>*</sup>:</label>
+                    <div class="fieldset__input-wrapper">
+                      <input class="input-text__input" type="text" name="firstname" id="firstname" value="Пётр"
+                        placeholder="Введите имя" required>
+                    </div>
+                  </div>
+                  <div class="fieldset__input-text input-text">
+                    <label class="input-text__label" for="lastname">ФАМИЛИЯ<sup>*</sup>:</label>
+                    <div class="fieldset__input-wrapper">
+                      <input class="input-text__input" type="text" name="lastname" id="lastname" value="Пустота"
+                        placeholder="Введите фамилию" required>
+                    </div>
+                  </div>
+                  <div class="fieldset__input-text input-text">
+                    <label class="input-text__label" for="surname">ОТЧЕСТВО:</label>
+                    <div class="fieldset__input-wrapper">
+                      <input class="input-text__input" type="text" name="surname" id="surname" value="Викторович"
+                        placeholder="Введите отчество">
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset form__fieldset--with-img fieldset">
+                <h3 class="fieldset__title">Контактная информация:</h3>
+                <div class="fieldset__wrapper">
+                  <div class="fieldset__input-text input-text">
+                  <label class="input-text__label" for="mobile-phone">КОНТАКТНЫЙ ТЕЛЕФОН<sup>*</sup>:</label>
+                  <div class="fieldset__input-wrapper">
+                    <input class="input-text__input" type="tel" name="mobile-phone" id="mobile-phone"
+                      placeholder="Введите телефон" required>
+                    <img src="#" alt="Изображение телефона.">
+                  </div>
+                </div>
+                <div class="fieldset__input-text input-text">
+                  <label class="input-text__label" for="email">ЭЛЕКТРОННАЯ ПОЧТА<sup>*</sup>:</label>
+                  <div class="fieldset__input-wrapper">
+                    <input class="input-text__input" type="email" name="email" id="email" placeholder="Введите e-mail"
+                      required>
+                    <img src="#" alt="Изображение почты.">
+                  </div>
                 </div>
               </div>
-              <div class="fieldset__input-text input-text">
-                <label class="input-text__label" for="lastname">ФАМИЛИЯ<sup>*</sup>:</label>
-                <div class="fieldset__input-wrapper">
-                  <input class="input-text__input" type="text" name="lastname" id="lastname" value="Пустота"
-                    placeholder="Введите фамилию" required>
-                </div>
-              </div>
-              <div class="fieldset__input-text input-text">
-                <label class="input-text__label" for="surname">ОТЧЕСТВО:</label>
-                <div class="fieldset__input-wrapper">
-                  <input class="input-text__input" type="text" name="surname" id="surname" value="Викторович"
-                    placeholder="Введите отчество">
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="form__fieldset fieldset">
-              <h3 class="fieldset__title">Контактная информация:</h3>
-              <div class="fieldset__input-text input-text">
-                <label class="input-text__label" for="mobile-phone">КОНТАКТНЫЙ ТЕЛЕФОН<sup>*</sup>:</label>
-                <div class="fieldset__input-wrapper">
-                  <input class="input-text__input" type="tel" name="mobile-phone" id="mobile-phone"
-                    placeholder="Введите телефон" required>
-                  <img src="#" alt="Изображение телефона.">
-                </div>
-              </div>
-              <div class="fieldset__input-text input-text">
-                <label class="input-text__label" for="email">ЭЛЕКТРОННАЯ ПОЧТА<sup>*</sup>:</label>
-                <div class="fieldset__input-wrapper">
-                  <input class="input-text__input" type="email" name="email" id="email" placeholder="Введите e-mail"
-                    required>
-                  <img src="#" alt="Изображение почты.">
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="form__fieldset fieldset">
-              <h3 class="fieldset__title">Ваше общее впечатление:</h3>
-              <ul class="fieldset__list">
+              </fieldset>
+            </div>
+            <fieldset class="form__fieldset form__fieldset--switches fieldset">
+              <h3 class="fieldset__title fieldset__title--border">Ваше общее впечатление:</h3>
+              <ul class="fieldset__list fieldset__list--radio">
                 <li class="fieldset__item">
                   <label class="fieldset__control radio">
                     <input class="radio__input" type="radio" name="impression" value="positive" checked>
@@ -115,9 +121,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__fieldset fieldset">
-              <h3 class="fieldset__title">Посещенные достопримечательности:</h3>
-              <ul class="fieldset__list">
+            <fieldset class="form__fieldset form__fieldset--switches fieldset">
+              <h3 class="fieldset__title fieldset__title--border">Посещенные достопримечательности:</h3>
+              <ul class="fieldset__list fieldset__list--checkbox">
                 <li class="fieldset__item">
                   <label class="fieldset__control checkbox">
                     <input class="checkbox__input" type="checkbox" name="Devil's Bridge" checked>
@@ -144,8 +150,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__fieldset fieldset">
-              <h3 class="fieldset__title">Опишите свои эмоции:</h3>
+            <fieldset class="form__fieldset form__fieldset--textarea fieldset">
+              <h3 class="fieldset__title fieldset__title--border">Опишите свои эмоции:</h3>
               <label class="visually-hidden" for="comment">Поле для отзыва</label>
               <textarea class="fieldset__input-textarea" name="comment" id="comment"
                 placeholder="Опишите подробно все свои восторги"></textarea>
@@ -165,17 +171,17 @@
         </div>
         <ul class="main-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social__link social__link--icon-vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <a class="social__link social__link--icon-telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social__link social__link--icon-youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Мы в Ютубе</span>
             </a>
           </li>
@@ -188,19 +194,21 @@
     </footer>
     <div class="modal-backdrop">
       <div class="modal modal--failure">
-        <div class="modal__wrapper">
+        <div class="modal__wrapper modal__wrapper--failure">
           <h3 class="modal__title">Что-то пошло не так!</h3>
           <p class="modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </div>
         <button class="modal__button" type="button">Ок</button>
       </div>
       <div class="modal modal--success">
-        <div class="modal__wrapper">
+        <div class="modal__wrapper modal__wrapper--success">
           <h3 class="modal__title">Ваш отзыв отправлен!</h3>
           <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
             опубликуем его на сайте.</p>
         </div>
-        <button class="modal__button" type="button">Закрыть окно</button>
+        <div class="modal__button-wrapper">
+          <button class="modal__button modal__button--close" type="button">Закрыть окно</button>
+        </div>
       </div>
     </div>
   </div>

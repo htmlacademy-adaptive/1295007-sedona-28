@@ -6,21 +6,18 @@
 }
 
 .search-hotel__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 262px;
   padding: 38px 0 32px;
   margin: 0 auto;
-  min-width: 262px;
 
   @media (min-width: bootstrap.$tablet-width) {
     padding: 60px 0 45px;
-    min-width: 435px;
+    width: 435px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
     padding: 61px 0 44px;
-    min-width: 435px;
+    width: 435px;
   }
 }
 
