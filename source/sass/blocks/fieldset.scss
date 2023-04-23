@@ -4,56 +4,135 @@
   margin: 0;
   padding: 0;
   border: none;
+}
 
-  &__title {
-    @include bootstrap.boldTitle;
-    color: bootstrap.$title-color;
-    text-align: center;
-    margin-top: 24px;
-    margin-bottom: 20px;
+.fieldset__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fieldset__title {
+  @include bootstrap.boldTitle;
+  color: bootstrap.$title-color;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 28px;
   }
 
-  &__group-wrapper {
+  &--border::before {
+    @media (min-width: bootstrap.$tablet-width) {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 50%;
+      left: 0;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      width: 280px;
+    }
+  }
+
+  &--border::after {
+    @media (min-width: bootstrap.$tablet-width) {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 50%;
+      right: 0;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      width: 280px;
+    }
+  }
+}
+
+.fieldset__input-wrapper {
+  width: 100%;
+}
+
+.fieldset__input-textarea {
+  @include bootstrap.boldTitle;
+
+  padding: 16px;
+  width: 100%;
+  height: 150px;
+  background-color: #f2f2f2;
+  border: none;
+  resize: none;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    height: 160px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    width: 768px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.input-text__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.fieldset__input-textarea::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.fieldset__list {
+  @include bootstrap.reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
+    flex-direction: row;
   }
 
-  &__wrapper {
-    width: 100%;
+  &--radio {
+    @media (min-width: bootstrap.$tablet-width) {
+      width: 575px;
+      margin: 0 auto;
+      margin-bottom: 48px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      width: 960px;
+      gap: 28px;
+      justify-content: space-around;
+      margin-bottom: 56px;
+    }
   }
 
-  &__label {
-    text-transform: uppercase;
-  }
+  &--checkbox {
+    @media (min-width: bootstrap.$tablet-width) {
+      width: 480px;
+      margin: 0 auto;
+      margin-bottom: 42px;
+    }
 
-  &__input {
-    @include bootstrap.boldTitle;
-    color: bootstrap.$title-color;
-
-    width: 280px;
-    height: 58px;
-    padding: 16px;
-    background-color: #f2f2f2;
-    border: none;
-  }
-
-  &__input-textarea {
-    @include bootstrap.boldTitle;
-
-    padding: 16px;
-    width: 279px;
-    min-height: 150px;
-    color: rgba(0, 0, 0, 0.3);
-    background-color: #f2f2f2;
-    border: none;
-  }
-
-  &__list {
-    @include bootstrap.reset-list;
-  }
-
-  &__item:not(:last-child) {
-    margin-bottom: 16px;
+    @media (min-width: bootstrap.$desktop-width) {
+      width: 100%;
+      gap: 64px;
+      justify-content: space-around;
+      margin-bottom: 56px;
+    }
   }
 }

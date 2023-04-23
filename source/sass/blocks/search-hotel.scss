@@ -3,52 +3,38 @@
 .search-hotel {
   text-align: center;
   text-transform: uppercase;
+}
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 38px 0 32px;
-    margin: 0 auto;
-    min-width: 262px;
+.search-hotel__wrapper {
+  width: 262px;
+  padding: 38px 0 32px;
+  margin: 0 auto;
 
-    @media (min-width: bootstrap.$tablet-width) {
-      padding: 60px 0 45px;
-      min-width: 435px;
-    }
-
-    @media (min-width: bootstrap.$desktop-width) {
-      padding: 61px 0 44px;
-      min-width: 435px;
-    }
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 60px 0 45px;
+    width: 435px;
   }
 
-  &__title {
-    @include bootstrap.boldTitle;
-    color: bootstrap.$title-color;
-    font-size: 21px;
-    margin-bottom: 29px;
+  @media (min-width: bootstrap.$desktop-width) {
+    padding: 61px 0 44px;
+    width: 435px;
+  }
+}
+
+.search-hotel__find-hotel {
+  @include bootstrap.button;
+  width: 284px;
+  min-height: 58px;
+  padding: 16px 0;
+  margin-bottom: 49px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    width: 458px;
+    margin-bottom: 55px;
   }
 
-  &__description {
-    margin: 0;
-  }
-
-  &__find-hotel {
-    @include bootstrap.button;
-    width: 284px;
-    min-height: 58px;
-    padding: 16px 0;
-    margin-bottom: 49px;
-
-    @media (min-width: bootstrap.$tablet-width) {
-      width: 458px;
-      margin-bottom: 55px;
-    }
-
-    @media (min-width: bootstrap.$desktop-width) {
-      width: 458px;
-      margin-bottom: 66px;
-    }
+  @media (min-width: bootstrap.$desktop-width) {
+    width: 458px;
+    margin-bottom: 66px;
   }
 }

@@ -1,8 +1,6 @@
 @use "global/bootstrap";
 
-.radio {
-  &__text {
-    @include bootstrap.boldTitle;
-    color: bootstrap.$title-color;
-  }
+.radio__text {
+  @include bootstrap.boldTitle;
+  color: bootstrap.$title-color;
 }

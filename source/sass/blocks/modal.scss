@@ -1,29 +1,102 @@
 @use "global/bootstrap.scss";
 
 .modal {
-  background-color: bootstrap.$main-bgColor;
-  width: 320px;
+  background-color: bootstrap.$main-colorbg;
+  width: 100%;
+  padding: 45px 0 35px;
+  text-align: center;
 
-  &__wrapper {
-    text-align: center;
-    text-transform: uppercase;
+  &--failure {
+    padding: 45px 0 35px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 50px 0 49px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      padding: 48px 0 49px;
+    }
   }
 
-  &__title {
-    @include bootstrap.boldTitle;
-    color: bootstrap.$title-color;
-    margin-bottom: 36px;
-  }
+  &--success {
+    padding: 36px 0 0;
 
-  &__message {
-    margin: 0;
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 53px 0 0;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      padding-top: 51px;
+    }
+  }
+}
+
+.modal__wrapper {
+  text-align: center;
+  text-transform: uppercase;
+  width: 237px;
+  margin: 0 auto;
+
+  &--failure {
+    width: 237px;
     margin-bottom: 28px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      width: 307px;
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-bottom: 23px;
+    }
   }
 
-  &__button {
-    @include bootstrap.button;
-    width: 180px;
-    height: 58px;
-    padding: 16px 0;
+  &--success {
+    width: 244px;
+    margin-bottom: 27px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      width: 444px;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.modal__title {
+  @include bootstrap.boldTitle;
+  color: bootstrap.$title-color;
+  margin-bottom: 36px;
+}
+
+.modal__message {
+  margin: 0;
+}
+
+.modal__button-wrapper {
+  background-color: #f2f2f2;
+}
+
+.modal__button {
+  @include bootstrap.button;
+  width: 180px;
+  padding: 18px 14px;
+  margin: 0 auto;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    width: 272px;
+  }
+
+  &--close {
+    width: 280px;
+    margin: 20px auto;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      width: 458px;
+      margin: 44px auto;
+    }
   }
 }
