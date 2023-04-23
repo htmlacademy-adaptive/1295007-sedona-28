@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <base href="https://htmlacademy-adaptive.github.io/1295007-sedona-28/5/">
 </head>
 
@@ -19,7 +21,9 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <a class="main-header__logo" href="#">
-          <img src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
+          <picture>
+            <img src="img/header/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
+          </picture>
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -40,8 +44,12 @@
     <main class="main-container">
       <section class="main-hero">
         <h1 class="visually-hidden">Достопримечательности городка Седона</h1>
-        <img class="main-hero__image" src="img/text-sedona.svg" width="229" height="39"
-          alt="Надпись Седона на фоне гор.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/main-hero/sedona-text-desktop.svg" width="460" height="80">
+          <source media="(min-width: 768px)" srcset="img/main-hero/sedona-text-tablet.svg" width="460" height="78">
+          <img class="main-hero__image" src="img/main-hero/sedona-text-mobile.svg" width="229" height="39"
+            alt="Надпись Седона на фоне гор.">
+        </picture>
       </section>
       <section class="gallery">
         <header class="gallery__header header">
@@ -52,7 +60,14 @@
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--big card">
             <div class="card__image-wrapper card__image-wrapper--big">
-              <img class="card__image" src="img/photo-1-desktop.jpg" width="280" height="280" alt="">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery/photo-1-desktop@1x.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery/photo-1-tablet@1x.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/gallery/photo-1-mobile@1x.jpg"
+                  srcset="img/gallery/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="">
+              </picture>
             </div>
             <div class="card__detail-wrapper">
               <div class="card__author-wrapper">
@@ -60,14 +75,21 @@
                 <p class="card__author-name">Автор фото: Борис</p>
               </div>
               <div class="card__statistics-wrapper">
-                <img src="#" alt="Поставить палец вверх фотографии.">
+                <img src="#" alt="Оценка фотографии.">
                 <b class="card__statistics-amount">1350</b>
               </div>
             </div>
           </li>
           <li class="gallery__item card">
             <div class="card__image-wrapper">
-              <img class="card__image" src="img/photo-2-desktop.jpg" width="280" height="280" alt="">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery/photo-2-desktop@1x.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery/photo-2-tablet@1x.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/gallery/photo-2-mobile@1x.jpg"
+                  srcset="img/gallery/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="">
+              </picture>
             </div>
             <div class="card__detail-wrapper">
               <div class="card__author-wrapper">
@@ -75,14 +97,21 @@
                 <p class="card__author-name">Автор фото: Сергей</p>
               </div>
               <div class="card__statistics-wrapper">
-                <img src="#" alt="Поставить палец вверх фотографии.">
+                <img src="#" alt="Оценка фотографии.">
                 <b class="card__statistics-amount">143</b>
               </div>
             </div>
           </li>
           <li class="gallery__item card">
             <div class="card__image-wrapper">
-              <img class="card__image" src="img/photo-3-desktop.jpg" width="280" height="280" alt="">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery/photo-3-desktop@1x.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery/photo-3-tablet@1x.jpg 1x, img/gallery/photo-3-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/gallery/photo-3-mobile@1x.jpg"
+                  srcset="img/gallery/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="">
+              </picture>
             </div>
             <div class="card__detail-wrapper">
               <div class="card__author-wrapper">
@@ -90,14 +119,21 @@
                 <p class="card__author-name">Автор фото: Петр</p>
               </div>
               <div class="card__statistics-wrapper">
-                <img src="#" alt="Поставить палец вверх фотографии.">
+                <img src="#" alt="Оценка фотографии.">
                 <b class="card__statistics-amount">96</b>
               </div>
             </div>
           </li>
           <li class="gallery__item card">
             <div class="card__image-wrapper">
-              <img class="card__image" src="img/photo-4-desktop.jpg" width="280" height="280" alt="">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery/photo-4-desktop@1x.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery/photo-4-tablet@1x.jpg 1x, img/gallery/photo-4-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/gallery/photo-4-mobile@1x.jpg"
+                  srcset="img/gallery/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="">
+              </picture>
             </div>
             <div class="card__detail-wrapper">
               <div class="card__author-wrapper">
@@ -105,7 +141,7 @@
                 <p class="card__author-name">Автор фото: Антон</p>
               </div>
               <div class="card__statistics-wrapper">
-                <img src="#" alt="Поставить палец вверх фотографии.">
+                <img src="#" alt="Оценка фотографии.">
                 <b class="card__statistics-amount">254</b>
               </div>
             </div>
@@ -119,8 +155,17 @@
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
         </div>
-        <img class="video-presentation__image" src="img/video-presentation.jpg" width="280" height="177"
-          alt="Видеопрезентация Седоны.">
+        <div class="video-presentation__image-wrapper">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/video-presentation/video-desktop@1x.jpg 1x, img/video-presentation/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/video-presentation/video-tablet@1x.jpg 1x, img/video-presentation/video-tablet@2x.jpg 2x">
+            <img class="video-presentation__image" src="img/video-presentation/video-mobile@1x.jpg"
+              srcset="img/video-presentation/video-mobile@2x.jpg 2x" width="280" height="177"
+              alt="Видеопрезентация Седоны.">
+          </picture>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
