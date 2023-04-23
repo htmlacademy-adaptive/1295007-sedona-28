@@ -1,5 +1,20 @@
 @use "global/bootstrap";
 
+.video-presentation__image-wrapper {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/play.png");
+    width: 48px;
+    height: 54px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+
 .video-presentation {
   text-align: center;
   text-transform: uppercase;
