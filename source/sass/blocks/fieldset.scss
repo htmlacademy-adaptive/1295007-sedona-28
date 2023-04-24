@@ -92,18 +92,12 @@
 
 .fieldset__list {
   @include bootstrap.reset-list;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 16px;
+  grid-template-columns: 1fr;
 
   @media (min-width: bootstrap.$tablet-width) {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: bootstrap.$desktop-width) {
-    display: flex;
-    flex-direction: row;
   }
 
   &--radio {
@@ -115,8 +109,9 @@
 
     @media (min-width: bootstrap.$desktop-width) {
       width: 960px;
+      grid-template-columns: repeat(3, 1fr);
       gap: 28px;
-      justify-content: space-around;
+      padding: 17px 53px;
       margin-bottom: 56px;
     }
   }
@@ -125,13 +120,15 @@
     @media (min-width: bootstrap.$tablet-width) {
       width: 480px;
       margin: 0 auto;
+      gap: 16px 32px;
       margin-bottom: 42px;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
       width: 100%;
+      grid-template-columns: repeat(4, 1fr);
       gap: 64px;
-      justify-content: space-around;
+      padding: 31px 44px;
       margin-bottom: 56px;
     }
   }

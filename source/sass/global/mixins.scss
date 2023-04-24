@@ -6,6 +6,7 @@
 
 @mixin button {
   display: inline-block;
+  vertical-align: middle;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;

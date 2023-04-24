@@ -16,6 +16,20 @@
     @media (min-width: bootstrap.$desktop-width) {
       padding: 48px 0 49px;
     }
+
+    .modal__wrapper {
+      width: 237px;
+      margin-bottom: 28px;
+
+      @media (min-width: bootstrap.$tablet-width) {
+        width: 307px;
+        margin-bottom: 25px;
+      }
+
+      @media (min-width: bootstrap.$desktop-width) {
+        margin-bottom: 23px;
+      }
+    }
   }
 
   &--success {
@@ -28,42 +42,27 @@
     @media (min-width: bootstrap.$desktop-width) {
       padding-top: 51px;
     }
+
+    .modal__wrapper {
+      width: 244px;
+      margin-bottom: 27px;
+
+      @media (min-width: bootstrap.$tablet-width) {
+        width: 444px;
+        margin-bottom: 30px;
+      }
+
+      @media (min-width: bootstrap.$desktop-width) {
+        margin-bottom: 28px;
+      }
+    }
   }
 }
 
 .modal__wrapper {
   text-align: center;
   text-transform: uppercase;
-  width: 237px;
   margin: 0 auto;
-
-  &--failure {
-    width: 237px;
-    margin-bottom: 28px;
-
-    @media (min-width: bootstrap.$tablet-width) {
-      width: 307px;
-      margin-bottom: 25px;
-    }
-
-    @media (min-width: bootstrap.$desktop-width) {
-      margin-bottom: 23px;
-    }
-  }
-
-  &--success {
-    width: 244px;
-    margin-bottom: 27px;
-
-    @media (min-width: bootstrap.$tablet-width) {
-      width: 444px;
-      margin-bottom: 30px;
-    }
-
-    @media (min-width: bootstrap.$desktop-width) {
-      margin-bottom: 28px;
-    }
-  }
 }
 
 .modal__title {

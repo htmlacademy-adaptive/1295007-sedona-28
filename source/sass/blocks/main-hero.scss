@@ -46,3 +46,27 @@
     }
   }
 }
+
+.main-hero__image-index {
+  @media (min-width: bootstrap.$tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+.main-hero__image {
+  @media (min-width: bootstrap.$tablet-width) {
+    width: 460px;
+    height: 80px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    width: 460px;
+    height: 78px;
+  }
+}

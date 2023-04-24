@@ -21,6 +21,18 @@
       padding: 0;
     }
   }
+
+  &--reversed {
+    @media (min-width: bootstrap.$tablet-width) {
+      .item__wrapper {
+        grid-template-columns: 2fr 1fr;
+      }
+
+      .item__wrapper-text {
+        order: 1;
+      }
+    }
+  }
 }
 
 .item__wrapper {
@@ -28,10 +40,6 @@
 
     display: grid;
     grid-template-columns: 1fr 2fr;
-
-    &--reversed {
-      grid-template-columns: 2fr 1fr;
-    }
   }
 }
 
@@ -44,10 +52,6 @@
   @media (min-width: bootstrap.$tablet-width) {
     min-height: 256px;
     padding: 52px 33px 30px;
-
-    &--reversed {
-      order: 1;
-    }
   }
 
   @media (min-width: bootstrap.$desktop-width) {
