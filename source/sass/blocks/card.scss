@@ -75,8 +75,31 @@
   margin: 0;
 }
 
+.card__statistics-link {
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 21px;
+    width: 23px;
+    mask-image: url("../img/stack.svg#icon-like");
+    background-color: #000000;
+    opacity: 0.3;
+
+    @media (min-width: bootstrap.$desktop-width) {
+      background-color: bootstrap.$white-color;
+      opacity: 1;
+    }
+  }
+}
+
 .card__statistics-amount {
   color: bootstrap.$title-color;
+  display: inline-block;
+  margin-left: 14px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-left: 9px;
+  }
 
   @media (min-width: bootstrap.$desktop-width) {
     color: bootstrap.$white-color;

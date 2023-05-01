@@ -153,11 +153,14 @@
   }
 
   .main-nav__list {
-    position: static;
+    @media (max-width: bootstrap.$mobile-width-only) {
+      position: absolute;
+      top: -223px;
+    }
   }
 
   .main-header__logo {
-    position: static;
+    position: absolute;
 
     @media (min-width: bootstrap.$tablet-width) {
       position: absolute;
