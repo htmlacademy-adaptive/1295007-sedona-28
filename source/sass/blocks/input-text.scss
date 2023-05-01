@@ -28,6 +28,14 @@
   &--image {
     padding-right: 70px;
   }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus:not(:placeholder-shown) {
+    background-color: #ffffff;
+  }
 }
 
 .input-text__image-wrapper {

@@ -12,6 +12,16 @@
 }
 
 .copyright__link {
+  color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -23,4 +33,12 @@
     top: 0;
     right: 0;
   }
+}
+
+.copyright__link:hover::after {
+  background-color: #81b3d2;
+}
+
+.copyright__link:active::after {
+  background-color: #b3b3b3;
 }

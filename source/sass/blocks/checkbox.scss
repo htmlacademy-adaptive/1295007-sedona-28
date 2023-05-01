@@ -34,3 +34,19 @@
   border-width: 0 0 2px 2px;
   transform: rotate(-45deg);
 }
+
+.checkbox__input:focus-visible + .checkbox__text::before {
+  outline: 3px solid #83b3d3;
+}
+
+.checkbox__input:hover + .checkbox__text::before {
+  background-color: #e5e5e5;
+}
+
+.checkbox__input:active + .checkbox__text::after {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.checkbox__input:active + .checkbox__text::before {
+  background-color: #d5d5d5;
+}

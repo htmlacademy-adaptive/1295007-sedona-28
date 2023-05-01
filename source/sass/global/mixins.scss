@@ -17,6 +17,20 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    cursor: default;
+  }
 }
 
 @mixin boldTitle {
