@@ -247,8 +247,8 @@ textarea {
   background-color: #e5e5e5;
 }
 
-.checkbox__input:active + .checkbox__text::after {
-  background-color: rgba(51, 51, 51, 0.3);
+.checkbox__input[type=checkbox]:checked:active + .checkbox__text::after {
+  border-color: rgba(51, 51, 51, 0.3);
 }
 
 .checkbox__input:active + .checkbox__text::before {
@@ -1441,7 +1441,7 @@ textarea {
   background-color: #e5e5e5;
 }
 
-.radio__input:active + .radio__text::after {
+.radio__input[type=radio]:checked:active + .radio__text::after {
   background-color: rgba(51, 51, 51, 0.3);
 }
 
