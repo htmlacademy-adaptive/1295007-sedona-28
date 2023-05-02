@@ -61,8 +61,6 @@
     border-top: 1px solid #aecee2;
     border-bottom: 1px solid #678fa8;
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-
-    padding: 17px 0 12px;
   }
 
   @media (min-width: bootstrap.$tablet-width) {
@@ -150,6 +148,7 @@
 .main-nav__link {
   color: inherit;
   display: block;
+  padding: 17px 0 12px;
 
   @media (max-width: bootstrap.$mobile-width-only) {
     &:hover {
@@ -167,6 +166,7 @@
   @media (min-width: bootstrap.$tablet-width) {
     @include bootstrap.normalTitle;
     color: bootstrap.$title-color;
+    padding: 18px 0;
 
     &--current {
       color: #766357;

@@ -30,10 +30,11 @@
 
 .main-footer__social {
   @include bootstrap.reset-list;
-  width: 156px;
+  max-width: 156px;
   margin: auto;
   gap: 6px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-footer__copyright {

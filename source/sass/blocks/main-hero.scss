@@ -10,7 +10,7 @@
   background-image: url("../img/intro-triangle.svg"), url("../img/main-hero/back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
-  background-position: bottom center;
+  background-position: bottom -1px center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro-triangle.svg"), url("../img/main-hero/back-mobile@2x.jpg");
