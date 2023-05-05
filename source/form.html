@@ -14,15 +14,13 @@
 
 <body class="page__body">
   <div class="container">
-    <header class="main-header">
+    <header class="main-header main-header--nojs">
       <nav class="main-header__nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <a class="main-header__logo" href="#">
-          <picture>
-            <img src="img/header/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
-          </picture>
+        <a class="main-header__logo" href="index.html">
+          <img src="img/header/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -43,12 +41,8 @@
     <main class="main-container">
       <section class="main-hero">
         <h1 class="visually-hidden">Здесь вы можете оставить отзыв</h1>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/main-hero/sedona-text-desktop.svg" width="460" height="80">
-          <source media="(min-width: 768px)" srcset="img/main-hero/sedona-text-tablet.svg" width="460" height="78">
-          <img class="main-hero__image" src="img/main-hero/sedona-text-mobile.svg" width="229" height="39"
+        <img class="main-hero__image" src="img/main-hero/sedona-text-mobile.svg" width="229" height="39"
           alt="Надпись Седона на фоне гор.">
-        </picture>
       </section>
       <section class="feedback">
         <div class="feedback__wrapper">
@@ -89,27 +83,27 @@
               <fieldset class="form__fieldset form__fieldset--with-img fieldset">
                 <h3 class="fieldset__title">Контактная информация:</h3>
                 <div class="fieldset__wrapper">
-                  <div class="fieldset__input-text input-text">
-                  <label class="input-text__label" for="mobile-phone">КОНТАКТНЫЙ ТЕЛЕФОН<sup>*</sup>:</label>
-                  <div class="fieldset__input-wrapper">
-                    <input class="input-text__input input-text__input--image" type="tel" name="mobile-phone" id="mobile-phone"
-                      placeholder="Введите телефон" required>
-                      <div class="input-text__image-wrapper">
-                        <img src="#" alt="Изображение телефона.">
+                  <div class="fieldset__input-text input-text input-text--image">
+                    <label class="input-text__label" for="mobile-phone">КОНТАКТНЫЙ ТЕЛЕФОН<sup>*</sup>:</label>
+                    <div class="fieldset__input-wrapper">
+                      <input class="input-text__input input-text__input--image" type="tel" name="mobile-phone"
+                        id="mobile-phone" placeholder="Введите телефон" required>
+                      <div class="input-text__image-wrapper input-text__image-wrapper--phone">
+                        <span class="visually-hidden">Изображение телефона</span>
                       </div>
+                    </div>
+                  </div>
+                  <div class="fieldset__input-text input-text input-text--image">
+                    <label class="input-text__label" for="email">ЭЛЕКТРОННАЯ ПОЧТА<sup>*</sup>:</label>
+                    <div class="fieldset__input-wrapper">
+                      <input class="input-text__input input-text__input--image" type="email" name="email" id="email"
+                        placeholder="Введите e-mail" required>
+                      <div class="input-text__image-wrapper input-text__image-wrapper--mail">
+                        <span class="visually-hidden">Изображение почты</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="fieldset__input-text input-text">
-                  <label class="input-text__label" for="email">ЭЛЕКТРОННАЯ ПОЧТА<sup>*</sup>:</label>
-                  <div class="fieldset__input-wrapper">
-                    <input class="input-text__input input-text__input--image" type="email" name="email" id="email" placeholder="Введите e-mail"
-                      required>
-                      <div class="input-text__image-wrapper">
-                        <img src="#" alt="Изображение почты.">
-                      </div>
-                  </div>
-                </div>
-              </div>
               </fieldset>
             </div>
             <fieldset class="form__fieldset form__fieldset--switches fieldset">
@@ -117,19 +111,19 @@
               <ul class="fieldset__list fieldset__list--radio">
                 <li class="fieldset__item">
                   <label class="fieldset__control radio">
-                    <input class="radio__input" type="radio" name="impression" value="positive" checked>
+                    <input class="visually-hidden radio__input" type="radio" name="impression" value="positive" checked>
                     <span class="radio__text">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="fieldset__item">
                   <label class="fieldset__control radio">
-                    <input class="radio__input" type="radio" name="impression" value="negative">
+                    <input class="visually-hidden radio__input" type="radio" name="impression" value="negative">
                     <span class="radio__text">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="fieldset__item">
                   <label class="fieldset__control radio">
-                    <input class="radio__input" type="radio" name="impression" value="hard answer">
+                    <input class="visually-hidden radio__input" type="radio" name="impression" value="hard answer">
                     <span class="radio__text">Затрудняюсь ответить</span>
                   </label>
                 </li>
@@ -140,25 +134,25 @@
               <ul class="fieldset__list fieldset__list--checkbox">
                 <li class="fieldset__item">
                   <label class="fieldset__control checkbox">
-                    <input class="checkbox__input" type="checkbox" name="Devil's Bridge" checked>
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="Devil's Bridge" checked>
                     <span class="checkbox__text">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="fieldset__item">
                   <label class="fieldset__control checkbox">
-                    <input class="checkbox__input" type="checkbox" name="Mount-Bell" checked>
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="Mount-Bell" checked>
                     <span class="checkbox__text">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="fieldset__item">
                   <label class="fieldset__control checkbox">
-                    <input class="checkbox__input" type="checkbox" name="Slide-park" checked>
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="Slide-park" checked>
                     <span class="checkbox__text">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="fieldset__item">
                   <label class="fieldset__control checkbox">
-                    <input class="checkbox__input" type="checkbox" name="Red rocks">
+                    <input class="visually-hidden checkbox__input" type="checkbox" name="Red rocks">
                     <span class="checkbox__text">Красные скалы</span>
                   </label>
                 </li>
@@ -185,37 +179,36 @@
         </div>
         <ul class="main-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--icon-vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Мы в Вконтакте</span>
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте.">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--icon-telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Мы в Телеграме</span>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Мы в Телеграме.">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--icon-youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Мы в Ютубе</span>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+              aria-label="Мы в Ютубе.">
             </a>
           </li>
         </ul>
         <div class="main-footer__copyright copyright">
-          <span class="copyright__title">Разработано</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
+            <span class="copyright__title">Разработано</span>
+          </a>
         </div>
       </div>
     </footer>
     <div class="modal-backdrop">
       <div class="modal modal--failure">
-        <div class="modal__wrapper modal__wrapper--failure">
+        <div class="modal__wrapper">
           <h3 class="modal__title">Что-то пошло не так!</h3>
           <p class="modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </div>
         <button class="modal__button" type="button">Ок</button>
       </div>
       <div class="modal modal--success">
-        <div class="modal__wrapper modal__wrapper--success">
+        <div class="modal__wrapper">
           <h3 class="modal__title">Ваш отзыв отправлен!</h3>
           <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
             опубликуем его на сайте.</p>
@@ -226,7 +219,7 @@
       </div>
     </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/navigation.js"></script>
 </body>
 
 </html>

@@ -15,3 +15,10 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+
+.main-header--nojs {
+  @media (max-width: bootstrap.$mobile-width-only) {
+    margin-top: 223px;
+  }
+}

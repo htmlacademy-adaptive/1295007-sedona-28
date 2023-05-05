@@ -7,16 +7,15 @@
 
 .search-hotel__wrapper {
   width: 262px;
-  padding: 38px 0 32px;
-  margin: 0 auto;
+  margin: 39px auto 32px;
 
   @media (min-width: bootstrap.$tablet-width) {
-    padding: 60px 0 45px;
+    margin: 60px auto 45px;
     width: 435px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    padding: 61px 0 44px;
+    margin: 61px auto 44px;
     width: 435px;
   }
 }

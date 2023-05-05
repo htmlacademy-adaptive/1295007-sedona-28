@@ -15,7 +15,6 @@
     margin: 36px 60px;
     padding: 0;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 
     @media (min-width: bootstrap.$desktop-width) {
@@ -31,10 +30,11 @@
 
 .main-footer__social {
   @include bootstrap.reset-list;
-  width: 156px;
+  max-width: 156px;
   margin: auto;
   gap: 6px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-footer__copyright {

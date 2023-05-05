@@ -21,6 +21,18 @@
       padding: 0;
     }
   }
+
+  &--reversed {
+    @media (min-width: bootstrap.$tablet-width) {
+      .item__wrapper {
+        grid-template-columns: 2fr 1fr;
+      }
+
+      .item__wrapper-text {
+        order: 1;
+      }
+    }
+  }
 }
 
 .item__wrapper {
@@ -28,26 +40,28 @@
 
     display: grid;
     grid-template-columns: 1fr 2fr;
-
-    &--reversed {
-      grid-template-columns: 2fr 1fr;
-    }
   }
 }
 
 .item__wrapper-text {
-  padding: 37px 18px;
+  padding: 33px 18px 40px 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
+  &--triangle {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      background-image: url("../img/advantages_triangle.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-top: 17%;
+    }
+  }
+
   @media (min-width: bootstrap.$tablet-width) {
     min-height: 256px;
-    padding: 52px 33px 30px;
-
-    &--reversed {
-      order: 1;
-    }
+    padding: 52px 33px 31px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {

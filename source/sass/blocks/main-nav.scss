@@ -61,8 +61,6 @@
     border-top: 1px solid #aecee2;
     border-bottom: 1px solid #678fa8;
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-
-    padding: 17px 0 12px;
   }
 
   @media (min-width: bootstrap.$tablet-width) {
@@ -88,7 +86,8 @@
       width: 22px;
       height: 22px;
 
-      background-image: url("../img/icon-menu_cross.svg");
+      mask-image: url("../img/stack.svg#close-menu");
+      background-color: #ffffff;
       background-repeat: no-repeat;
     }
   }
@@ -127,22 +126,63 @@
       height: 22px;
       z-index: 2;
 
-      background-image: url("../img/icon-menu.svg");
+      mask-image: url("../img/stack.svg#open-menu");
+      background-color: #81b3d2;
       background-repeat: no-repeat;
     }
+  }
+}
+
+.main-nav__toggle:hover {
+  &::before {
+    opacity: 0.6;
+  }
+}
+
+.main-nav__toggle:active {
+  &::before {
+    opacity: 0.3;
   }
 }
 
 .main-nav__link {
   color: inherit;
   display: block;
+  padding: 17px 0 12px;
+
+  @media (max-width: bootstrap.$mobile-width-only) {
+    &:hover {
+      background-color: #669ec0;
+      box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    &:active {
+      background: #5496bd;
+      box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: bootstrap.$tablet-width) {
     @include bootstrap.normalTitle;
     color: bootstrap.$title-color;
+    padding: 18px 0;
 
     &--current {
       color: #766357;
+    }
+  }
+}
+
+.main-nav__link:not(.main-nav__link--current) {
+  @media (min-width: bootstrap.$tablet-width) {
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
     }
   }
 }
@@ -153,14 +193,9 @@
   }
 
   .main-nav__list {
-    position: static;
-  }
-
-  .main-header__logo {
-    position: static;
-
-    @media (min-width: bootstrap.$tablet-width) {
+    @media (max-width: bootstrap.$mobile-width-only) {
       position: absolute;
+      top: -223px;
     }
   }
 }

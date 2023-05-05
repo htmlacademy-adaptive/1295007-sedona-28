@@ -2,4 +2,43 @@
 
 .copyright {
   color: bootstrap.$title-color;
+  position: relative;
+  padding-right: 40px;
+}
+
+.copyright__title {
+  display: inline-block;
+  padding: 7px 0;
+}
+
+.copyright__link {
+  color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 35px;
+    mask-image: url("../img/stack.svg#icon-academy");
+    background-color: #000000;
+
+    top: 0;
+    right: 0;
+  }
+}
+
+.copyright__link:hover::after {
+  background-color: #81b3d2;
+}
+
+.copyright__link:active::after {
+  background-color: #b3b3b3;
 }
