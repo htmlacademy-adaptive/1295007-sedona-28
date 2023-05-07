@@ -20,7 +20,10 @@
 
   &:active {
     background-color: #5496bd;
-    opacity: 0.3;
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 
   &::after {
@@ -28,17 +31,18 @@
     content: "";
     width: 24px;
     height: 24px;
+    background-color: #ffffff;
   }
 
   &--vk::after {
-    background-image: url("../img/stack.svg#icon-vk");
+    mask-image: url("../img/sprite.svg#icon-vk");
   }
 
   &--telegram::after {
-    background-image: url("../img/stack.svg#icon-telegram");
+    mask-image: url("../img/sprite.svg#icon-telegram");
   }
 
   &--youtube::after {
-    background-image: url("../img/stack.svg#icon-youtube");
+    mask-image: url("../img/sprite.svg#icon-youtube");
   }
 }

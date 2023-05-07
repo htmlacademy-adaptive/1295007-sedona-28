@@ -9,6 +9,10 @@
   .fieldset__input-wrapper {
     position: relative;
   }
+
+  .input-text__input {
+    padding-right: 70px;
+  }
 }
 
 .input-text__label {
@@ -25,10 +29,6 @@
   padding: 16px;
   background-color: #f2f2f2;
   border: none;
-
-  &--image {
-    padding-right: 70px;
-  }
 
   &:hover {
     background-color: #e5e5e5;
@@ -51,7 +51,7 @@
   &--phone::before {
     content: "";
     position: absolute;
-    background-image: url("../img/stack.svg#icon-phone");
+    background-image: url("../img/sprite.svg#icon-phone");
     width: 18px;
     height: 18px;
   }
@@ -59,7 +59,7 @@
   &--mail::before {
     content: "";
     position: absolute;
-    background-image: url("../img/stack.svg#icon-mail");
+    background-image: url("../img/sprite.svg#icon-mail");
     width: 18px;
     height: 18px;
   }

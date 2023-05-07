@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -20,7 +20,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <a class="main-header__logo" href="index.html">
-          <img src="img/header/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
+          <img src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -41,7 +41,7 @@
     <main class="main-container">
       <section class="main-hero">
         <h1 class="visually-hidden">Здесь вы можете оставить отзыв</h1>
-        <img class="main-hero__image" src="img/main-hero/sedona-text-mobile.svg" width="229" height="39"
+        <img class="main-hero__image" src="img/sedona-text-mobile.svg" width="229" height="39"
           alt="Надпись Седона на фоне гор.">
       </section>
       <section class="feedback">
@@ -86,7 +86,7 @@
                   <div class="fieldset__input-text input-text input-text--image">
                     <label class="input-text__label" for="mobile-phone">КОНТАКТНЫЙ ТЕЛЕФОН<sup>*</sup>:</label>
                     <div class="fieldset__input-wrapper">
-                      <input class="input-text__input input-text__input--image" type="tel" name="mobile-phone"
+                      <input class="input-text__input" type="tel" name="mobile-phone"
                         id="mobile-phone" placeholder="Введите телефон" required>
                       <div class="input-text__image-wrapper input-text__image-wrapper--phone">
                         <span class="visually-hidden">Изображение телефона</span>
@@ -96,7 +96,7 @@
                   <div class="fieldset__input-text input-text input-text--image">
                     <label class="input-text__label" for="email">ЭЛЕКТРОННАЯ ПОЧТА<sup>*</sup>:</label>
                     <div class="fieldset__input-wrapper">
-                      <input class="input-text__input input-text__input--image" type="email" name="email" id="email"
+                      <input class="input-text__input" type="email" name="email" id="email"
                         placeholder="Введите e-mail" required>
                       <div class="input-text__image-wrapper input-text__image-wrapper--mail">
                         <span class="visually-hidden">Изображение почты</span>
@@ -199,7 +199,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-backdrop">
+    <div class="page__modal">
       <div class="modal modal--failure">
         <div class="modal__wrapper">
           <h3 class="modal__title">Что-то пошло не так!</h3>
