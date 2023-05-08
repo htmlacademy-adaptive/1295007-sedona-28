@@ -2,18 +2,25 @@
 
 .modal {
   background-color: bootstrap.$main-colorbg;
-  width: 100%;
-  padding: 45px 0 35px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 
   &--failure {
+    display: none;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 116px;
     padding: 45px 0 35px;
 
     @media (min-width: bootstrap.$tablet-width) {
-      padding: 50px 0 49px;
+      width: 400px;
+      margin-top: 283px;
+      padding: 55px 0 49px;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
+      margin-top: 244px;
       padding: 48px 0 49px;
     }
 
@@ -23,7 +30,7 @@
 
       @media (min-width: bootstrap.$tablet-width) {
         width: 307px;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
       }
 
       @media (min-width: bootstrap.$desktop-width) {
@@ -33,26 +40,33 @@
   }
 
   &--success {
-    padding: 36px 0 0;
+    display: none;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 402px;
 
     @media (min-width: bootstrap.$tablet-width) {
-      padding: 53px 0 0;
+      width: 640px;
+      margin-top: 162px;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
-      padding-top: 51px;
+      margin-top: 145px;
     }
 
     .modal__wrapper {
       width: 244px;
+      margin-top: 36px;
       margin-bottom: 27px;
 
       @media (min-width: bootstrap.$tablet-width) {
         width: 444px;
-        margin-bottom: 30px;
+        margin-top: 53px;
+        margin-bottom: 35px;
       }
 
       @media (min-width: bootstrap.$desktop-width) {
+        margin-top: 51px;
         margin-bottom: 28px;
       }
     }

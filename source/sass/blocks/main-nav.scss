@@ -2,6 +2,7 @@
 
 .main-nav {
   position: relative;
+  z-index: 2;
 
   @media (min-width: bootstrap.$tablet-width) {
     background-color: bootstrap.$main-colorbg;

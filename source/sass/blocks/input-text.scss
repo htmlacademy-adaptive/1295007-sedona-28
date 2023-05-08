@@ -47,20 +47,4 @@
   top: 0;
   right: 0;
   padding: 20px;
-
-  &--phone::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/sprite.svg#icon-phone");
-    width: 18px;
-    height: 18px;
-  }
-
-  &--mail::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/sprite.svg#icon-mail");
-    width: 18px;
-    height: 18px;
-  }
 }
