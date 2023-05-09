@@ -9,13 +9,15 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 60px 63px;
+    padding: 0 60px;
+    margin-bottom: 63px;
     border-top: none;
     gap: 35px;
 
     @media (min-width: bootstrap.$desktop-width) {
       gap: 50px;
-      padding: 0 120px 71px;
+      padding: 0 120px;
+      margin-bottom: 71px;
     }
   }
 }
@@ -25,10 +27,10 @@
     content: "";
     position: absolute;
     width: 1px;
-    height: 338px;
+    height: 100%;
     background-color: #dbdbdb;
     background-repeat: no-repeat;
-    top: 0;
+    bottom: -14px;
     left: 50%;
   }
 }
