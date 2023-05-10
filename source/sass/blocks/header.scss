@@ -12,8 +12,15 @@
   &--advantages {
     margin-bottom: 35px;
 
+    @media (max-width: bootstrap.$mobile-width-only) {
+      span::after {
+        white-space: pre;
+      }
+    }
+
     @media (min-width: bootstrap.$tablet-width) {
       font-size: 21px;
+      margin-bottom: 28px;
     }
   }
 
@@ -31,7 +38,7 @@
 
   &--search {
     font-size: 21px;
-    margin-bottom: 29px;
+    margin-bottom: 22px;
 
     @media (min-width: bootstrap.$tablet-width) {
       font-size: 30px;
@@ -46,4 +53,12 @@
 
 .header__text {
   margin: 0;
+
+  &--search {
+    @media (min-width: bootstrap.$tablet-width) {
+      span::after {
+        white-space: pre;
+      }
+    }
+  }
 }

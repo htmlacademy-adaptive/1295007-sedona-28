@@ -19,3 +19,7 @@ button,
 textarea {
   font-family: inherit;
 }
+
+span::after {
+  content: "\A";
+}

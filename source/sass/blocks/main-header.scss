@@ -16,6 +16,9 @@
   transform: translateX(-50%);
 }
 
+.main-header__logo-image {
+  max-width: max-content;
+}
 
 .main-header--nojs {
   @media (max-width: bootstrap.$mobile-width-only) {

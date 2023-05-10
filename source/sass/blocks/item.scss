@@ -44,10 +44,7 @@
 }
 
 .item__wrapper-text {
-  padding: 33px 18px 40px 18px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 37px 18px;
 
   &--triangle {
     @media (max-width: bootstrap.$mobile-width-only) {
@@ -55,7 +52,8 @@
       background-position: top;
       background-repeat: no-repeat;
       background-size: contain;
-      padding-top: 17%;
+      padding-top: 22%;
+      padding-bottom: 40px;
     }
   }
 
@@ -69,15 +67,18 @@
   }
 
   &--inside-gray {
-    padding: 24px 0;
-    padding-bottom: 28px;
+    padding: 24px 8px;
 
     &:not(:last-child) {
       border-bottom: 1px solid #d6d6d6;
     }
 
+    &:last-child {
+      padding-bottom: 28px;
+    }
+
     @media (min-width: bootstrap.$tablet-width) {
-      padding: 41px 33px 63px;
+      padding: 41px 33px;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
@@ -104,13 +105,69 @@
 .item__title {
   @include bootstrap.boldTitle;
   margin-bottom: 11px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    span::after {
+      white-space: pre;
+    }
+  }
+
+  @media (min-width: bootstrap.$tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .item__number {
   display: block;
   margin-bottom: 17px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .item__description {
   margin: 0;
+
+  span.mobile::after {
+    white-space: pre;
+  }
+
+  span.tablet::after {
+    display: none;
+  }
+
+  span.desktop::after {
+    display: none;
+  }
+
+  @media (min-width: bootstrap.$tablet-width) {
+    span.tablet::after {
+      display: initial;
+      white-space: pre;
+    }
+
+    span.desktop::after {
+      display: none;
+    }
+
+    span.mobile::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    span.mobile::after {
+      display: none;
+    }
+
+    span.tablet::after {
+      display: none;
+    }
+
+    span.desktop::after {
+      display: initial;
+      white-space: pre;
+    }
+  }
 }
