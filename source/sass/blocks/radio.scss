@@ -7,7 +7,7 @@
 .radio__text {
   @include bootstrap.boldTitle;
   color: bootstrap.$title-color;
-  padding: 10px 10px 10px 62px;
+  padding: 14px 10px 10px 62px;
   display: block;
   white-space: nowrap;
   cursor: pointer;

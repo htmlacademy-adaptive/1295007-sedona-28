@@ -9,7 +9,11 @@
 .fieldset__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
+
+  &--with-img {
+    gap: 10px;
+  }
 }
 
 .fieldset__title {
@@ -17,7 +21,7 @@
   color: bootstrap.$title-color;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   position: relative;
 
   @media (min-width: bootstrap.$tablet-width) {
@@ -93,7 +97,7 @@
 .fieldset__list {
   @include bootstrap.reset-list;
   display: grid;
-  gap: 16px;
+  gap: 12px;
   grid-template-columns: 1fr;
 
   @media (min-width: bootstrap.$tablet-width) {
@@ -117,6 +121,8 @@
   }
 
   &--checkbox {
+    gap: 16px;
+
     @media (min-width: bootstrap.$tablet-width) {
       width: 480px;
       margin: 0 auto;
