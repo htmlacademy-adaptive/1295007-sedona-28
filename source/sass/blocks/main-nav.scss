@@ -39,7 +39,6 @@
   @media (min-width: bootstrap.$tablet-width) {
     position: static;
     flex-direction: row;
-    justify-content: space-between;
 
     min-height: 56px;
     align-items: center;
@@ -65,7 +64,7 @@
   }
 
   @media (min-width: bootstrap.$tablet-width) {
-    width: 153px;
+    width: calc(100% / 5);
 
     &:nth-child(4n+3) {
       margin-left: 20%;
