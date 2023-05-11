@@ -3,10 +3,16 @@
 .header__title {
   @include bootstrap.boldTitle;
   color: bootstrap.$title-color;
-  margin-bottom: 34px;
+  margin-bottom: 25px;
 
   @media (min-width: bootstrap.$tablet-width) {
     font-size: 30px;
+  }
+
+  &--gallery {
+    @media (min-width: bootstrap.$tablet-width) {
+      margin-bottom: 31px;
+    }
   }
 
   &--advantages {
@@ -49,12 +55,34 @@
       margin-bottom: 34px;
     }
   }
+
+  &--video-presentation {
+    @media (min-width: bootstrap.$tablet-width) {
+      margin-bottom: 32px;
+    }
+  }
 }
 
 .header__text {
   margin: 0;
 
   &--search {
+    @media (min-width: bootstrap.$tablet-width) {
+      span::after {
+        white-space: pre;
+      }
+    }
+  }
+
+  &--gallery {
+    @media (min-width: bootstrap.$tablet-width) {
+      span::after {
+        white-space: pre;
+      }
+    }
+  }
+
+  &--video-presentation {
     @media (min-width: bootstrap.$tablet-width) {
       span::after {
         white-space: pre;
