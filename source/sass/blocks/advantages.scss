@@ -6,16 +6,16 @@
 }
 
 .advantages__header {
-  margin: 32px auto;
+  margin: 32px auto 18px;
   width: 284px;
 
   @media (min-width: bootstrap.$tablet-width) {
-    margin: 47px auto;
+    margin: 47px auto 56px;
     width: 520px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    margin: 59px auto;
-    width: 483px;
+    margin: 59px auto 45px;
+    width: 487px;
   }
 }

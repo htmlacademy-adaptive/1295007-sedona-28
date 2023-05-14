@@ -5,11 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -20,7 +22,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <a class="main-header__logo" href="index.html">
-          <img src="img/header/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
+          <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -41,13 +43,13 @@
     <main class="main-container">
       <section class="main-hero">
         <h1 class="visually-hidden">Здесь вы можете оставить отзыв</h1>
-        <img class="main-hero__image" src="img/main-hero/sedona-text-mobile.svg" width="229" height="39"
+        <img class="main-hero__image" src="img/sedona-text-mobile.svg" width="229" height="39"
           alt="Надпись Седона на фоне гор.">
       </section>
       <section class="feedback">
         <div class="feedback__wrapper">
-          <header class="feedback__header header">
-            <h2 class="header__title header__title--form">Оставьте свой отзыв</h2>
+          <header class="feedback__header header header--form">
+            <h2 class="header__title">Оставьте свой отзыв</h2>
             <p class="header__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
               вами
               достопримечательностях</p>
@@ -80,15 +82,18 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="form__fieldset form__fieldset--with-img fieldset">
+              <fieldset class="form__fieldset form__fieldset--with-img fieldset--with-img">
                 <h3 class="fieldset__title">Контактная информация:</h3>
-                <div class="fieldset__wrapper">
+                <div class="fieldset__wrapper fieldset__wrapper--with-img">
                   <div class="fieldset__input-text input-text input-text--image">
                     <label class="input-text__label" for="mobile-phone">КОНТАКТНЫЙ ТЕЛЕФОН<sup>*</sup>:</label>
                     <div class="fieldset__input-wrapper">
-                      <input class="input-text__input input-text__input--image" type="tel" name="mobile-phone"
-                        id="mobile-phone" placeholder="Введите телефон" required>
-                      <div class="input-text__image-wrapper input-text__image-wrapper--phone">
+                      <input class="input-text__input" type="tel" name="mobile-phone" id="mobile-phone"
+                        placeholder="Введите телефон" required>
+                      <div class="input-text__image-wrapper">
+                        <svg aria-hidden="true" focusable="false" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
                         <span class="visually-hidden">Изображение телефона</span>
                       </div>
                     </div>
@@ -96,9 +101,12 @@
                   <div class="fieldset__input-text input-text input-text--image">
                     <label class="input-text__label" for="email">ЭЛЕКТРОННАЯ ПОЧТА<sup>*</sup>:</label>
                     <div class="fieldset__input-wrapper">
-                      <input class="input-text__input input-text__input--image" type="email" name="email" id="email"
-                        placeholder="Введите e-mail" required>
-                      <div class="input-text__image-wrapper input-text__image-wrapper--mail">
+                      <input class="input-text__input" type="email" name="email" id="email" placeholder="Введите e-mail"
+                        required>
+                      <div class="input-text__image-wrapper">
+                        <svg aria-hidden="true" focusable="false" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#icon-mail"></use>
+                        </svg>
                         <span class="visually-hidden">Изображение почты</span>
                       </div>
                     </div>
@@ -106,7 +114,7 @@
                 </div>
               </fieldset>
             </div>
-            <fieldset class="form__fieldset form__fieldset--switches fieldset">
+            <fieldset class="form__fieldset form__fieldset--switches fieldset fieldset--switches">
               <h3 class="fieldset__title fieldset__title--border">Ваше общее впечатление:</h3>
               <ul class="fieldset__list fieldset__list--radio">
                 <li class="fieldset__item">
@@ -129,8 +137,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__fieldset form__fieldset--switches fieldset">
-              <h3 class="fieldset__title fieldset__title--border">Посещенные достопримечательности:</h3>
+            <fieldset class="form__fieldset form__fieldset--switches fieldset fieldset--switches">
+              <h3 class="fieldset__title fieldset__title--border">Посещенные&ensp;<br>достопримечательности:</h3>
               <ul class="fieldset__list fieldset__list--checkbox">
                 <li class="fieldset__item">
                   <label class="fieldset__control checkbox">
@@ -158,7 +166,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__fieldset form__fieldset--textarea fieldset">
+            <fieldset class="form__fieldset form__fieldset--textarea fieldset--textarea">
               <h3 class="fieldset__title fieldset__title--border">Опишите свои эмоции:</h3>
               <label class="visually-hidden" for="comment">Поле для отзыва</label>
               <textarea class="fieldset__input-textarea" name="comment" id="comment"
@@ -199,10 +207,10 @@
         </div>
       </div>
     </footer>
-    <div class="modal-backdrop">
+    <div class="page__modal page__modal--close">
       <div class="modal modal--failure">
         <div class="modal__wrapper">
-          <h3 class="modal__title">Что-то пошло не так!</h3>
+          <h3 class="modal__title">Что-то пошло&ensp;<br>не так!</h3>
           <p class="modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </div>
         <button class="modal__button" type="button">Ок</button>
@@ -210,7 +218,7 @@
       <div class="modal modal--success">
         <div class="modal__wrapper">
           <h3 class="modal__title">Ваш отзыв отправлен!</h3>
-          <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+          <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы
             опубликуем его на сайте.</p>
         </div>
         <div class="modal__button-wrapper">

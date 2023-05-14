@@ -10,6 +10,14 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    gap: 11px;
+  }
+
+  &--with-img {
+    gap: 10px;
+  }
 }
 
 .fieldset__title {
@@ -17,10 +25,11 @@
   color: bootstrap.$title-color;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   position: relative;
 
   @media (min-width: bootstrap.$tablet-width) {
+    font-size: 21px;
     margin-bottom: 28px;
   }
 
@@ -54,6 +63,36 @@
     @media (min-width: bootstrap.$desktop-width) {
       width: 280px;
     }
+  }
+
+  @media (max-width: bootstrap.$mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.fieldset--switches .fieldset__title {
+  margin-bottom: 28px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.fieldset--textarea .fieldset__title {
+  margin-bottom: 21px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 27px;
+  }
+}
+
+.fieldset--with-img .fieldset__title {
+  margin-bottom: 17px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 25px;
   }
 }
 
@@ -104,24 +143,26 @@
     @media (min-width: bootstrap.$tablet-width) {
       width: 575px;
       margin: 0 auto;
-      margin-bottom: 48px;
+      margin-bottom: 25px;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
       width: 960px;
       grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
+      gap: 64px;
       padding: 17px 53px;
-      margin-bottom: 56px;
+      margin-bottom: 32px;
     }
   }
 
   &--checkbox {
+    gap: 17px;
+
     @media (min-width: bootstrap.$tablet-width) {
       width: 480px;
       margin: 0 auto;
       gap: 16px 32px;
-      margin-bottom: 42px;
+      margin-bottom: 18px;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
@@ -129,7 +170,11 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 64px;
       padding: 31px 44px;
-      margin-bottom: 56px;
+      margin-bottom: 32px;
     }
   }
+}
+
+.fieldset__item {
+  height: 46px;
 }

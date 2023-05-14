@@ -20,14 +20,25 @@
   margin-bottom: 16px;
 
   @media (min-width: bootstrap.$tablet-width) {
+    margin-top: 94px;
+    margin-bottom: 25px;
+    font-size: 21px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
     margin-top: 100px;
-    margin-bottom: 29px;
   }
 }
 
 .services__description {
   @include bootstrap.normalTitle;
   color: bootstrap.$secondary-color;
+
+  @media (max-width: bootstrap.$mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .services__item {
@@ -46,7 +57,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 33px;
 
     @media (min-width: bootstrap.$tablet-width) {
       margin-bottom: 0;
@@ -56,44 +67,45 @@
   &--home::before {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-house.svg");
+    background-image: url("../img/sprite.svg#icon-house");
     background-repeat: no-repeat;
     background-size: contain;
     width: 39px;
     height: 37px;
 
-    top: 1px;
+    top: -7px;
     left: -46px;
 
     @media (min-width: bootstrap.$tablet-width) {
       width: 77px;
       height: 72px;
-      top: 106px;
+      top: 96px;
       left: 50%;
       transform: translate(-50%, -50%);
     }
 
     @media (min-width: bootstrap.$desktop-width) {
       width: 79px;
+      top: 106px;
     }
   }
 
   &--food::before {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-burger.svg");
+    background-image: url("../img/sprite.svg#icon-burger");
     background-repeat: no-repeat;
     background-size: contain;
     width: 40px;
     height: 35px;
 
-    top: 1px;
+    top: -6px;
     left: -47px;
 
     @media (min-width: bootstrap.$tablet-width) {
       width: 80px;
       height: 68px;
-      top: 106px;
+      top: 96px;
       left: 50%;
       transform: translate(-50%, -50%);
     }
@@ -101,25 +113,26 @@
     @media (min-width: bootstrap.$desktop-width) {
       width: 73px;
       height: 69px;
+      top: 106px;
     }
   }
 
   &--souvenirs::before {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-gift.svg");
+    background-image: url("../img/sprite.svg#icon-gift");
     background-repeat: no-repeat;
     background-size: contain;
     width: 32px;
     height: 38px;
 
-    top: 1px;
+    top: -7px;
     left: -43px;
 
     @media (min-width: bootstrap.$tablet-width) {
       width: 66px;
       height: 75px;
-      top: 106px;
+      top: 101px;
       left: 50%;
       transform: translate(-50%, -50%);
     }
@@ -127,6 +140,7 @@
     @media (min-width: bootstrap.$desktop-width) {
       width: 77px;
       height: 75px;
+      top: 106px;
     }
   }
 }

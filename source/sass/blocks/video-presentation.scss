@@ -1,27 +1,17 @@
 @use "global/bootstrap";
 
-.video-presentation__image-wrapper {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/play.png");
-    width: 48px;
-    height: 54px;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-  }
-}
-
 .video-presentation {
   text-align: center;
   text-transform: uppercase;
-  padding: 0 20px;
+  margin: 0 20px;
 
   @media (min-width: bootstrap.$tablet-width) {
-    padding: 0 60px;
+    margin: 0 60px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    width: 800px;
+    margin: 0 auto;
   }
 }
 
@@ -32,12 +22,35 @@
   margin: 17px auto 38px;
 
   @media (min-width: bootstrap.$tablet-width) {
-    margin: 57px auto 65px;
+    margin: 57px auto 91px;
     width: 445px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    margin: 61px auto 63px;
+    margin: 61px auto 87px;
+  }
+}
+
+.video-presentation__image-wrapper {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/sprite.svg#play");
+    width: 48px;
+    height: 54px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    margin-bottom: 84px;
   }
 }
 
@@ -49,11 +62,5 @@
 
   @media (min-width: bootstrap.$tablet-width) {
     height: 500px;
-    margin-bottom: 60px;
-  }
-
-  @media (min-width: bootstrap.$desktop-width) {
-    min-width: 800px;
-    margin-bottom: 84px;
   }
 }

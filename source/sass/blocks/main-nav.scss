@@ -2,6 +2,7 @@
 
 .main-nav {
   position: relative;
+  z-index: 2;
 
   @media (min-width: bootstrap.$tablet-width) {
     background-color: bootstrap.$main-colorbg;
@@ -38,9 +39,8 @@
   @media (min-width: bootstrap.$tablet-width) {
     position: static;
     flex-direction: row;
-    justify-content: space-between;
 
-    height: 56px;
+    min-height: 56px;
     align-items: center;
   }
 }
@@ -64,14 +64,14 @@
   }
 
   @media (min-width: bootstrap.$tablet-width) {
-    min-width: 153px;
+    width: calc(100% / 5);
 
     &:nth-child(4n+3) {
       margin-left: 20%;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
-      min-width: 240px;
+      width: 240px;
     }
   }
 }
@@ -86,7 +86,7 @@
       width: 22px;
       height: 22px;
 
-      mask-image: url("../img/stack.svg#close-menu");
+      mask-image: url("../img/sprite.svg#close-menu");
       background-color: #ffffff;
       background-repeat: no-repeat;
     }
@@ -113,6 +113,7 @@
 
     @media (min-width: bootstrap.$tablet-width) {
       display: flex;
+      flex-wrap: wrap;
     }
   }
 
@@ -126,7 +127,7 @@
       height: 22px;
       z-index: 2;
 
-      mask-image: url("../img/stack.svg#open-menu");
+      mask-image: url("../img/sprite.svg#open-menu");
       background-color: #81b3d2;
       background-repeat: no-repeat;
     }
@@ -148,7 +149,7 @@
 .main-nav__link {
   color: inherit;
   display: block;
-  padding: 17px 0 12px;
+  padding: 17px 15px 12px;
 
   @media (max-width: bootstrap.$mobile-width-only) {
     &:hover {
@@ -166,7 +167,7 @@
   @media (min-width: bootstrap.$tablet-width) {
     @include bootstrap.normalTitle;
     color: bootstrap.$title-color;
-    padding: 18px 0;
+    padding: 18px 15px;
 
     &--current {
       color: #766357;
