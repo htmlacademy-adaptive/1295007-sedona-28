@@ -5,36 +5,33 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin: auto;
 
   &--failure {
     display: none;
     width: 320px;
-    margin: 0 auto;
-    margin-top: 116px;
     padding: 45px 0 35px;
 
     @media (min-width: bootstrap.$tablet-width) {
       width: 400px;
-      margin-top: 283px;
-      padding: 55px 0 49px;
+      padding: 49px 0 45px;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
-      margin-top: 244px;
       padding: 48px 0 49px;
     }
 
     .modal__wrapper {
       width: 237px;
-      margin-bottom: 28px;
+      margin-bottom: 33px;
 
       @media (min-width: bootstrap.$tablet-width) {
         width: 307px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
       }
 
       @media (min-width: bootstrap.$desktop-width) {
-        margin-bottom: 23px;
+        margin-bottom: 42px;
       }
     }
   }
@@ -42,32 +39,25 @@
   &--success {
     display: none;
     width: 320px;
-    margin: 0 auto;
-    margin-top: 402px;
 
     @media (min-width: bootstrap.$tablet-width) {
       width: 640px;
-      margin-top: 162px;
-    }
-
-    @media (min-width: bootstrap.$desktop-width) {
-      margin-top: 145px;
     }
 
     .modal__wrapper {
       width: 244px;
       margin-top: 36px;
-      margin-bottom: 27px;
+      margin-bottom: 59px;
 
       @media (min-width: bootstrap.$tablet-width) {
         width: 444px;
         margin-top: 53px;
-        margin-bottom: 35px;
+        margin-bottom: 45px;
       }
 
       @media (min-width: bootstrap.$desktop-width) {
         margin-top: 51px;
-        margin-bottom: 28px;
+        margin-bottom: 55px;
       }
     }
   }
@@ -82,7 +72,18 @@
 .modal__title {
   @include bootstrap.boldTitle;
   color: bootstrap.$title-color;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
+
+  @media (max-width: bootstrap.$mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: bootstrap.$tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal__message {
@@ -96,7 +97,7 @@
 .modal__button {
   @include bootstrap.button;
   width: 180px;
-  padding: 18px 14px;
+  padding: 18px 0 13px;
   margin: 0 auto;
 
   @media (min-width: bootstrap.$tablet-width) {
@@ -106,10 +107,12 @@
   &--close {
     width: 280px;
     margin: 20px auto;
+    font-size: 18px;
 
     @media (min-width: bootstrap.$tablet-width) {
       width: 458px;
       margin: 44px auto;
+      font-size: 21px;
     }
   }
 }

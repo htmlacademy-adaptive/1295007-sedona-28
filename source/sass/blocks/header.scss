@@ -1,5 +1,9 @@
 @use "global/bootstrap";
 
+.header__text {
+  margin: 0;
+}
+
 .header__title {
   @include bootstrap.boldTitle;
   color: bootstrap.$title-color;
@@ -8,84 +12,78 @@
   @media (min-width: bootstrap.$tablet-width) {
     font-size: 30px;
   }
+}
 
-  &--gallery {
-    @media (min-width: bootstrap.$tablet-width) {
-      margin-bottom: 31px;
+.header {
+  &--advantages {
+    .header__title {
+      margin-bottom: 35px;
+
+      @media (min-width: bootstrap.$tablet-width) {
+        font-size: 21px;
+        margin-bottom: 28px;
+      }
     }
   }
 
-  &--advantages {
-    margin-bottom: 35px;
+  &--search-hotel {
+    .header__title {
+      font-size: 21px;
+      margin-bottom: 22px;
 
-    @media (max-width: bootstrap.$mobile-width-only) {
-      span::after {
-        white-space: pre;
+      @media (min-width: bootstrap.$tablet-width) {
+        font-size: 30px;
+        margin-bottom: 34px;
+      }
+
+      @media (min-width: bootstrap.$desktop-width) {
+        margin-bottom: 34px;
       }
     }
 
-    @media (min-width: bootstrap.$tablet-width) {
-      font-size: 21px;
-      margin-bottom: 28px;
+    .header__text {
+      @media (max-width: bootstrap.$mobile-width-only) {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &--gallery {
+    .header__title {
+      @media (min-width: bootstrap.$tablet-width) {
+        margin-bottom: 31px;
+      }
+    }
+
+    .header__text {
+      @media (max-width: bootstrap.$mobile-width-only) {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &--video-presentation {
+    .header__title {
+      @media (min-width: bootstrap.$tablet-width) {
+        margin-bottom: 32px;
+      }
     }
   }
 
   &--form {
-    margin-bottom: 24px;
+    .header__title {
+      margin-bottom: 24px;
 
-    @media (min-width: bootstrap.$tablet-width) {
-      margin-bottom: 20px;
-    }
-
-    @media (min-width: bootstrap.$desktop-width) {
-      margin-bottom: 31px;
-    }
-  }
-
-  &--search {
-    font-size: 21px;
-    margin-bottom: 22px;
-
-    @media (min-width: bootstrap.$tablet-width) {
-      font-size: 30px;
-      margin-bottom: 34px;
-    }
-
-    @media (min-width: bootstrap.$desktop-width) {
-      margin-bottom: 34px;
-    }
-  }
-
-  &--video-presentation {
-    @media (min-width: bootstrap.$tablet-width) {
-      margin-bottom: 32px;
-    }
-  }
-}
-
-.header__text {
-  margin: 0;
-
-  &--search {
-    @media (min-width: bootstrap.$tablet-width) {
-      span::after {
-        white-space: pre;
+      @media (min-width: bootstrap.$tablet-width) {
+        margin-bottom: 20px;
       }
-    }
-  }
 
-  &--gallery {
-    @media (min-width: bootstrap.$tablet-width) {
-      span::after {
-        white-space: pre;
-      }
-    }
-  }
-
-  &--video-presentation {
-    @media (min-width: bootstrap.$tablet-width) {
-      span::after {
-        white-space: pre;
+      @media (min-width: bootstrap.$desktop-width) {
+        margin-bottom: 31px;
       }
     }
   }

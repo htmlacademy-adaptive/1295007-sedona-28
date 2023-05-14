@@ -9,8 +9,8 @@ import htmlmin from 'gulp-htmlmin'
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import {stacksvg} from 'gulp-stacksvg';
-import {deleteAsync} from 'del';
+import { stacksvg } from 'gulp-stacksvg';
+import { deleteAsync } from 'del';
 import browser from 'browser-sync';
 
 // Styles
@@ -43,7 +43,7 @@ const scripts = () => {
     .pipe(terser())
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
-  }
+}
 
 // Images
 
@@ -66,46 +66,46 @@ const createWebp = () => {
       webp: {}
     }))
     .pipe(gulp.dest('build/img'))
-  }
+}
 
 // SVG
 
 const svg = () =>
   gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
-  .pipe(svgo())
-  .pipe(gulp.dest('build/img'));
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
 
 const svgFav = () =>
   gulp.src('source/img/favicons/*.svg')
-  .pipe(svgo())
-  .pipe(gulp.dest('build/img/favicons'));
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img/favicons'));
 
 const makeStack = () => {
   return gulp.src('source/img/icons/*.svg')
-  .pipe(svgo())
-  .pipe(stacksvg({ output: 'sprite' }))
-  .pipe(gulp.dest('build/img'));
+    .pipe(svgo())
+    .pipe(stacksvg({ output: 'sprite' }))
+    .pipe(gulp.dest('build/img'));
 }
 
 // Copy
 
 const copy = (done) => {
   gulp.src([
-  'source/fonts/*.{woff2,woff}',
-  'source/*.ico',
-  'source/*.webmanifest',
+    'source/fonts/*.{woff2,woff}',
+    'source/*.ico',
+    'source/*.webmanifest',
   ], {
-  base: 'source'
+    base: 'source'
   })
-  .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build'))
   done();
-  }
+}
 
 // Clean
 
 const clean = () => {
   return deleteAsync('build');
-  };
+};
 
 // Server
 
@@ -126,7 +126,7 @@ const server = (done) => {
 const reload = (done) => {
   browser.reload();
   done();
-  }
+}
 
 // Watcher
 
@@ -134,7 +134,7 @@ const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
-  }
+}
 
 // Build
 

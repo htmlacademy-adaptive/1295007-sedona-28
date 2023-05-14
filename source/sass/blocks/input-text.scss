@@ -23,7 +23,6 @@
 .input-text__input {
   @include bootstrap.boldTitle;
   color: bootstrap.$title-color;
-  cursor: pointer;
 
   width: 100%;
   height: 58px;
@@ -37,6 +36,7 @@
 
   &:focus:not(:placeholder-shown) {
     background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
   }
 }
 

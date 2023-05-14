@@ -34,9 +34,9 @@
   @include bootstrap.normalTitle;
   color: bootstrap.$secondary-color;
 
-  @media (min-width: bootstrap.$tablet-width) {
-    span::after {
-      white-space: pre;
+  @media (max-width: bootstrap.$mobile-width-only) {
+    br {
+      display: none;
     }
   }
 }

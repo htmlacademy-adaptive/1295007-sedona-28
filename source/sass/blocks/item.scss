@@ -35,6 +35,23 @@
   }
 }
 
+.item__description {
+  margin: 0;
+
+  @media (max-width: bootstrap.$tablet-width) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: bootstrap.$tablet-width) {
+    span::after {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+}
+
 .item__wrapper {
   @media (min-width: bootstrap.$tablet-width) {
 
@@ -67,7 +84,7 @@
   }
 
   &--inside-gray {
-    padding: 24px 8px;
+    padding: 24px 0;
 
     &:not(:last-child) {
       border-bottom: 1px solid #d6d6d6;
@@ -87,6 +104,14 @@
 
     @media (min-width: bootstrap.$desktop-width) {
       padding: 52px 50px;
+    }
+
+    .item__title {
+      @media (max-width: bootstrap.$mobile-width-only) {
+        br {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -110,9 +135,9 @@
   @include bootstrap.boldTitle;
   margin-bottom: 11px;
 
-  @media (min-width: bootstrap.$tablet-width) {
-    span::after {
-      white-space: pre;
+  @media (max-width: bootstrap.$mobile-width-only) {
+    br {
+      display: none;
     }
   }
 
@@ -127,51 +152,5 @@
 
   @media (min-width: bootstrap.$tablet-width) {
     margin-bottom: 24px;
-  }
-}
-
-.item__description {
-  margin: 0;
-
-  span.mobile::after {
-    white-space: pre;
-  }
-
-  span.tablet::after {
-    display: none;
-  }
-
-  span.desktop::after {
-    display: none;
-  }
-
-  @media (min-width: bootstrap.$tablet-width) {
-    span.tablet::after {
-      display: initial;
-      white-space: pre;
-    }
-
-    span.desktop::after {
-      display: none;
-    }
-
-    span.mobile::after {
-      display: none;
-    }
-  }
-
-  @media (min-width: bootstrap.$desktop-width) {
-    span.mobile::after {
-      display: none;
-    }
-
-    span.tablet::after {
-      display: none;
-    }
-
-    span.desktop::after {
-      display: initial;
-      white-space: pre;
-    }
   }
 }
