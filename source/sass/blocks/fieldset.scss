@@ -119,6 +119,15 @@
     display: block;
     margin: 0 auto;
   }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
 }
 
 .input-text__input::placeholder {
@@ -176,5 +185,6 @@
 }
 
 .fieldset__item {
+  min-width: 0;
   height: 46px;
 }
