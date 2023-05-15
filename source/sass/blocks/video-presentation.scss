@@ -34,17 +34,6 @@
 .video-presentation__image-wrapper {
   position: relative;
 
-  &::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/sprite.svg#play");
-    width: 48px;
-    height: 54px;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-  }
-
   @media (min-width: bootstrap.$tablet-width) {
     margin-bottom: 40px;
   }
@@ -63,4 +52,16 @@
   @media (min-width: bootstrap.$tablet-width) {
     height: 500px;
   }
+}
+
+.video-presentation__button {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
