@@ -157,7 +157,7 @@
 
     @media (min-width: bootstrap.$desktop-width) {
       width: 960px;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, auto);
       gap: 64px;
       padding: 17px 53px;
       margin-bottom: 32px;
@@ -176,7 +176,7 @@
 
     @media (min-width: bootstrap.$desktop-width) {
       width: 100%;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, auto);
       gap: 64px;
       padding: 31px 44px;
       margin-bottom: 32px;
