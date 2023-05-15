@@ -34,7 +34,7 @@
     background-color: #e5e5e5;
   }
 
-  &:focus:not(:placeholder-shown) {
+  &:focus {
     background-color: #ffffff;
     outline: 4px solid #e5e5e5;
   }
